@@ -8,8 +8,6 @@ TICKER_ALIASES = {
 
 
 def normalize_year(value: object) -> Optional[int]:
-    """Normalize a year value to a four-digit integer."""
-
     if value is None:
         return None
 
@@ -33,8 +31,6 @@ def normalize_year(value: object) -> Optional[int]:
 
 
 def normalize_ticker(value: object) -> Optional[str]:
-    """Normalize a company ticker to uppercase without spaces."""
-
     if value is None:
         return None
 

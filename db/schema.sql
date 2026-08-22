@@ -9,6 +9,7 @@ DROP TABLE IF EXISTS documents;
 DROP TABLE IF EXISTS analysis;
 DROP TABLE IF EXISTS cashflow;
 DROP TABLE IF EXISTS balancesheet;
+DROP TABLE IF EXISTS market_cap;
 DROP TABLE IF EXISTS profitandloss;
 DROP TABLE IF EXISTS companies;
 
@@ -118,6 +119,19 @@ CREATE TABLE stock_prices (
     close_price REAL,
     volume REAL,
     adjusted_close REAL,
+    FOREIGN KEY (company_id) REFERENCES companies(id)
+);
+
+CREATE TABLE market_cap (
+    id INTEGER PRIMARY KEY,
+    company_id TEXT NOT NULL,
+    year INTEGER,
+    market_cap_crore REAL,
+    enterprise_value_crore REAL,
+    pe_ratio REAL,
+    pb_ratio REAL,
+    ev_ebitda REAL,
+    dividend_yield_pct REAL,
     FOREIGN KEY (company_id) REFERENCES companies(id)
 );
 

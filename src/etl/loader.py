@@ -1,15 +1,12 @@
-"""
-Excel data loader for the Nifty 100 Analytics project.
-"""
-
 from pathlib import Path
+from datetime import datetime
+import sqlite3
 
 import pandas as pd
 
 from src.etl.normaliser import normalize_ticker, normalize_year
 
 
-# Source files that contain a title row before the actual headers.
 CORE_FILES = {
     "analysis.xlsx",
     "balancesheet.xlsx",
@@ -21,65 +18,288 @@ CORE_FILES = {
 }
 
 
-def load_excel(file_path: str | Path) -> pd.DataFrame:
-    """
-    Load an Excel file and return a cleaned DataFrame.
+TABLE_LOAD_ORDER = [
+    ("companies.xlsx", "companies"),
+    ("profitandloss.xlsx", "profitandloss"),
+    ("balancesheet.xlsx", "balancesheet"),
+    ("cashflow.xlsx", "cashflow"),
+    ("analysis.xlsx", "analysis"),
+    ("documents.xlsx", "documents"),
+    ("prosandcons.xlsx", "prosandcons"),
+    ("sectors.xlsx", "sectors"),
+    ("market_cap.xlsx", "market_cap"),
+    ("financial_ratios.xlsx", "financial_ratios"),
+    ("peer_groups.xlsx", "peer_groups"),
+    ("stock_prices.xlsx", "stock_prices"),
+]
 
-    Core files have a descriptive title row followed by the header.
-    Supplementary files have the header in the first row.
-    """
+
+def load_excel(file_path: str | Path) -> pd.DataFrame:
+
     file_path = Path(file_path)
 
     if not file_path.exists():
-        raise FileNotFoundError(f"Excel file not found: {file_path}")
+        raise FileNotFoundError(
+            f"Excel file not found: {file_path}"
+        )
 
-    # Core files: title row + header row.
-    # Supplementary files: header is the first row.
     header_row = 1 if file_path.name.lower() in CORE_FILES else 0
 
-    df = pd.read_excel(file_path, header=header_row)
+    df = pd.read_excel(
+        file_path,
+        header=header_row,
+    )
 
-    # Remove completely empty rows and columns.
-    df = df.dropna(axis=0, how="all")
-    df = df.dropna(axis=1, how="all")
+    df = df.dropna(
+        axis=0,
+        how="all",
+    )
 
-    # Standardise column names.
+    df = df.dropna(
+        axis=1,
+        how="all",
+    )
+
     df.columns = [
-        str(column).strip().lower().replace(" ", "_")
+        str(column)
+        .strip()
+        .lower()
+        .replace(" ", "_")
         for column in df.columns
     ]
 
-    # Standardise ticker/company identifiers.
     for column in ("company_id", "ticker"):
         if column in df.columns:
-            df[column] = df[column].apply(normalize_ticker)
+            df[column] = df[column].apply(
+                normalize_ticker
+            )
 
-    # Standardise year values.
     if "year" in df.columns:
-        df["year"] = df["year"].apply(normalize_year)
+        df["year"] = df["year"].apply(
+            normalize_year
+        )
 
-    # Standardise stock-price dates.
     if "date" in df.columns:
-        df["date"] = pd.to_datetime(df["date"], errors="coerce")
+        df["date"] = pd.to_datetime(
+            df["date"],
+            errors="coerce",
+        )
 
     return df
 
 
-def load_raw_directory(directory: str | Path) -> dict[str, pd.DataFrame]:
-    """
-    Load every Excel file from a directory.
+def load_raw_directory(
+    directory: str | Path,
+) -> dict[str, pd.DataFrame]:
+    """Load all Excel files from one directory."""
 
-    Returns:
-        Dictionary mapping filename to cleaned DataFrame.
-    """
     directory = Path(directory)
 
     if not directory.exists():
-        raise FileNotFoundError(f"Directory not found: {directory}")
+        raise FileNotFoundError(
+            f"Directory not found: {directory}"
+        )
 
-    files = sorted(directory.glob("*.xlsx"))
+    files = sorted(
+        directory.glob("*.xlsx")
+    )
 
     return {
         file.name: load_excel(file)
         for file in files
     }
+
+
+def load_all_to_sqlite(
+    source_directory: str | Path,
+    db_path: str | Path = "nifty100.db",
+    audit_path: str | Path = "output/load_audit.csv",
+) -> pd.DataFrame:
+
+    source_directory = Path(
+        source_directory
+    )
+
+    db_path = Path(db_path)
+
+    audit_path = Path(
+        audit_path
+    )
+
+    raw_data = load_raw_directory(
+        source_directory / "raw"
+    )
+
+    supporting_data = load_raw_directory(
+        source_directory / "supporting"
+    )
+
+    data = {
+        **raw_data,
+        **supporting_data,
+    }
+
+    audit_rows = []
+
+    db_path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    audit_path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    connection = sqlite3.connect(
+        db_path
+    )
+
+    try:
+        # Foreign keys MUST remain enabled.
+        connection.execute(
+            "PRAGMA foreign_keys = ON"
+        )
+
+        for filename, table_name in TABLE_LOAD_ORDER:
+
+            started_at = datetime.now()
+
+            if filename not in data:
+
+                audit_rows.append({
+                    "table_name": table_name,
+                    "source_file": filename,
+                    "source_rows": 0,
+                    "loaded_rows": 0,
+                    "rejected_rows": 0,
+                    "status": "MISSING",
+                    "message": "Source file not found",
+                    "loaded_at": started_at,
+                })
+
+                continue
+
+
+            dataframe = data[
+                filename
+            ].copy()
+
+            source_rows = len(
+                dataframe
+            )
+
+            rejected_rows = 0
+
+            if (
+                table_name != "companies"
+                and "company_id" in dataframe.columns
+            ):
+
+                companies_df = data[
+                    "companies.xlsx"
+                ]
+
+                valid_company_ids = set(
+                    companies_df["id"]
+                    .dropna()
+                    .astype(str)
+                    .str.strip()
+                    .str.upper()
+                )
+
+                normalized_ids = (
+                    dataframe["company_id"]
+                    .fillna("")
+                    .astype(str)
+                    .str.strip()
+                    .str.upper()
+                )
+
+                valid_mask = (
+                    normalized_ids
+                    .isin(valid_company_ids)
+                )
+
+                rejected_rows = int(
+                    (~valid_mask).sum()
+                )
+
+                dataframe = dataframe.loc[
+                    valid_mask
+                ].copy()
+
+            try:
+
+                table_columns = [
+                    row[1]
+                    for row in connection.execute(
+                        f"PRAGMA table_info({table_name})"
+                    ).fetchall()
+                ]
+
+                # Keep only columns that exist in SQLite.
+                dataframe = dataframe[
+                    [
+                        column
+                        for column in table_columns
+                        if column in dataframe.columns
+                    ]
+                ]
+
+                dataframe.to_sql(
+                    table_name,
+                    connection,
+                    if_exists="append",
+                    index=False,
+                )
+
+                loaded_rows = len(
+                    dataframe
+                )
+
+                audit_rows.append({
+                    "table_name": table_name,
+                    "source_file": filename,
+                    "source_rows": source_rows,
+                    "loaded_rows": loaded_rows,
+                    "rejected_rows": rejected_rows,
+                    "status": "SUCCESS",
+                    "message": "",
+                    "loaded_at": started_at,
+                })
+
+            except Exception as exc:
+
+                audit_rows.append({
+                    "table_name": table_name,
+                    "source_file": filename,
+                    "source_rows": source_rows,
+                    "loaded_rows": 0,
+                    "rejected_rows": source_rows,
+                    "status": "FAILED",
+                    "message": str(exc),
+                    "loaded_at": started_at,
+                })
+
+                connection.rollback()
+
+                raise
+
+
+        connection.commit()
+
+    finally:
+
+        connection.close()
+
+    audit = pd.DataFrame(
+        audit_rows
+    )
+
+    audit.to_csv(
+        audit_path,
+        index=False,
+    )
+
+    return audit
