@@ -1,13 +1,13 @@
 table_name,source_file,source_rows,loaded_rows,rejected_rows,status,message,loaded_at
-companies,companies.xlsx,92,92,0,SUCCESS,,2026-08-22 15:41:51.257033
-profitandloss,profitandloss.xlsx,1276,1177,99,SUCCESS,,2026-08-22 15:41:51.269867
-balancesheet,balancesheet.xlsx,1312,1227,85,SUCCESS,,2026-08-22 15:41:51.295037
-cashflow,cashflow.xlsx,1187,1098,89,SUCCESS,,2026-08-22 15:41:51.326065
-analysis,analysis.xlsx,20,16,4,SUCCESS,,2026-08-22 15:41:51.353698
-documents,documents.xlsx,1585,1457,128,SUCCESS,,2026-08-22 15:41:51.370726
-prosandcons,prosandcons.xlsx,16,14,2,SUCCESS,,2026-08-22 15:41:51.399356
-sectors,sectors.xlsx,92,92,0,SUCCESS,,2026-08-22 15:41:51.415839
-market_cap,market_cap.xlsx,552,552,0,SUCCESS,,2026-08-22 15:41:51.433306
-financial_ratios,financial_ratios.xlsx,1184,1160,24,SUCCESS,,2026-08-22 15:41:51.453964
-peer_groups,peer_groups.xlsx,56,56,0,SUCCESS,,2026-08-22 15:41:51.480925
-stock_prices,stock_prices.xlsx,5520,5520,0,SUCCESS,,2026-08-22 15:41:51.494751
+companies,companies.xlsx,92,92,0,SUCCESS,,2026-08-28 00:33:35.748899
+profitandloss,profitandloss.xlsx,1276,1164,99,SUCCESS,,2026-08-28 00:33:35.761311
+balancesheet,balancesheet.xlsx,1312,1058,85,SUCCESS,,2026-08-28 00:33:35.783644
+cashflow,cashflow.xlsx,1187,1063,89,SUCCESS,,2026-08-28 00:33:35.809269
+analysis,analysis.xlsx,20,16,4,SUCCESS,,2026-08-28 00:33:35.829179
+documents,documents.xlsx,1585,1456,128,SUCCESS,,2026-08-28 00:33:35.840992
+prosandcons,prosandcons.xlsx,16,14,2,SUCCESS,,2026-08-28 00:33:35.864791
+sectors,sectors.xlsx,92,92,0,SUCCESS,,2026-08-28 00:33:35.878444
+market_cap,market_cap.xlsx,552,552,0,SUCCESS,,2026-08-28 00:33:35.892942
+financial_ratios,financial_ratios.xlsx,1184,1041,24,SUCCESS,,2026-08-28 00:33:35.915702
+peer_groups,peer_groups.xlsx,56,56,0,SUCCESS,,2026-08-28 00:33:35.941488
+stock_prices,stock_prices.xlsx,5520,5520,0,SUCCESS,,2026-08-28 00:33:35.954564
