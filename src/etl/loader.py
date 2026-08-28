@@ -69,7 +69,6 @@ def load_excel(file_path: str | Path) -> pd.DataFrame:
         .replace(" ", "_")
         for column in df.columns
     ]
-
     for column in ("company_id", "ticker"):
 
         if column in df.columns:
@@ -88,15 +87,10 @@ def load_excel(file_path: str | Path) -> pd.DataFrame:
 
         df["date"] = pd.to_datetime(
             df["date"],
-            errors="coerce",
-        )
-
-        df["date"] = df["date"].dt.strftime(
-            "%Y-%m-%d"
+            errors="coerce"
         )
 
     return df
-
 
 def load_raw_directory(
     directory: str | Path,
@@ -367,7 +361,7 @@ def load_all_to_sqlite(
                                                 if duplicate_rows < 0:
                                                     duplicate_rows = 0
                                                     rejected_rows += duplicate_rows
-                                                    
+
             table_columns = [
                 row[1]
                 for row in connection.execute(

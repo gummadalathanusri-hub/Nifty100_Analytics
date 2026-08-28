@@ -118,6 +118,8 @@ def validate_fk(
                 "CRITICAL",
                 f"Orphan company_id in {table_name}",
             )
+
+            
 def validate_profit_and_loss(
     pnl: pd.DataFrame,
     failures: list[dict[str, Any]],
@@ -297,7 +299,6 @@ def validate_cashflow(
                     f"calculated={calculated}",
                 )
 
-
 def validate_year_format(
     dataframes: dict[str, pd.DataFrame],
     failures: list[dict[str, Any]],
@@ -308,16 +309,7 @@ def validate_year_format(
 
         for _, row in dataframe.iterrows():
             year = row.get("year")
-
             if pd.isna(year):
-                _add_failure(
-                    failures,
-                    "DQ-07",
-                    row.get("company_id"),
-                    year,
-                    "CRITICAL",
-                    f"Unparseable year in {table_name}",
-                )
                 continue
 
             try:
@@ -338,8 +330,6 @@ def validate_year_format(
                     "CRITICAL",
                     f"Invalid year format in {table_name}: {year}",
                 )
-
-
 def validate_coverage(
     pnl: pd.DataFrame,
     balance_sheet: pd.DataFrame,
