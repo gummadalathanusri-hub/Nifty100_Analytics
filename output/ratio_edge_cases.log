@@ -1,0 +1,289 @@
+Day 13 — Ratio Edge Case Log
+======================================================================
+
+ROCE anomalies (>5 percentage points): 36
+
+Company: INDIGO | Year: 2024
+Metric: ROCE | Engine: 5643.45% | Source: 24.50% | Difference: 5618.95 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: BEL | Year: 2024
+Metric: ROCE | Engine: 4504.72% | Source: 34.60% | Difference: 4470.12 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: HAL | Year: 2024
+Metric: ROCE | Engine: 3617.39% | Source: 38.90% | Difference: 3578.49 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: ICICIPRULI | Year: 2024
+Metric: ROCE | Engine: 754.89% | Source: 8.75% | Difference: 746.14 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: HDFCLIFE | Year: 2024
+Metric: ROCE | Engine: 646.47% | Source: 6.61% | Difference: 639.86 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: HEROMOTOCO | Year: 2024
+Metric: ROCE | Engine: 177.92% | Source: 29.10% | Difference: 148.82 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: LT | Year: 2024
+Metric: ROCE | Engine: 152.62% | Source: 17.18% | Difference: 135.44 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: ICICIGI | Year: 2024
+Metric: ROCE | Engine: 146.43% | Source: 22.50% | Difference: 123.93 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: HINDALCO | Year: 2024
+Metric: ROCE | Engine: 118.21% | Source: 11.30% | Difference: 106.91 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: ADANIGREEN | Year: 2024
+Metric: ROCE | Engine: 11.49% | Source: 96.50% | Difference: 85.01 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: HINDUNILVR | Year: 2024
+Metric: ROCE | Engine: 89.68% | Source: 27.20% | Difference: 62.48 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: CIPLA | Year: 2024
+Metric: ROCE | Engine: 71.55% | Source: 22.80% | Difference: 48.75 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: COALINDIA | Year: 2024
+Metric: ROCE | Engine: 105.75% | Source: 63.60% | Difference: 42.15 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: TRENT | Year: 2024
+Metric: ROCE | Engine: 50.85% | Source: 23.80% | Difference: 27.05 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: NESTLEIND | Year: 2024
+Metric: ROCE | Engine: 162.06% | Source: 185.43% | Difference: 23.37 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: GODREJCP | Year: 2024
+Metric: ROCE | Engine: 4.73% | Source: 26.49% | Difference: 21.76 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: TATAMOTORS | Year: 2024
+Metric: ROCE | Engine: 33.93% | Source: 20.10% | Difference: 13.83 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: BHARTIARTL | Year: 2024
+Metric: ROCE | Engine: 25.10% | Source: 13.10% | Difference: 12.00 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: M&M | Year: 2024
+Metric: ROCE | Engine: 16.12% | Source: 26.98% | Difference: 10.86 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: BOSCHLTD | Year: 2024
+Metric: ROCE | Engine: 30.25% | Source: 20.60% | Difference: 9.65 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: BAJAJFINSV | Year: 2024
+Metric: ROCE | Engine: 11.71% | Source: 21.14% | Difference: 9.43 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: TORNTPHARM | Year: 2024
+Metric: ROCE | Engine: 32.30% | Source: 23.20% | Difference: 9.10 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: SHREECEM | Year: 2024
+Metric: ROCE | Engine: 22.88% | Source: 14.80% | Difference: 8.08 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: BAJFINANCE | Year: 2024
+Metric: ROCE | Engine: 4.36% | Source: 11.90% | Difference: 7.54 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: BRITANNIA | Year: 2024
+Metric: ROCE | Engine: 56.24% | Source: 48.90% | Difference: 7.34 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: SHRIRAMFIN | Year: 2024
+Metric: ROCE | Engine: 4.32% | Source: 11.30% | Difference: 6.98 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: CHOLAFIN | Year: 2024
+Metric: ROCE | Engine: 3.51% | Source: 10.40% | Difference: 6.89 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: MOTHERSON | Year: 2024
+Metric: ROCE | Engine: 20.54% | Source: 13.70% | Difference: 6.84 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: TECHM | Year: 2024
+Metric: ROCE | Engine: 18.60% | Source: 11.90% | Difference: 6.70 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: PFC | Year: 2024
+Metric: ROCE | Engine: 3.49% | Source: 9.96% | Difference: 6.47 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: LICI | Year: 2024
+Metric: ROCE | Engine: 57.53% | Source: 63.79% | Difference: 6.26 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: IRCTC | Year: 2024
+Metric: ROCE | Engine: 47.78% | Source: 53.80% | Difference: 6.02 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: POWERGRID | Year: 2024
+Metric: ROCE | Engine: 19.17% | Source: 13.20% | Difference: 5.97 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: AMBUJACEM | Year: 2024
+Metric: ROCE | Engine: 18.51% | Source: 12.80% | Difference: 5.71 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: TATAPOWER | Year: 2024
+Metric: ROCE | Engine: 16.45% | Source: 11.10% | Difference: 5.35 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+Company: HCLTECH | Year: 2024
+Metric: ROCE | Engine: 34.71% | Source: 29.60% | Difference: 5.11 percentage points
+Category: data source issue / methodology difference
+Explanation: Ratio engine follows the Sprint-defined ROCE formula using available P&L and balance-sheet fields. The pre-computed source ROCE uses a different methodology/base.
+
+ROE anomalies (>5 percentage points): 18
+
+Company: BEL | Year: 2024
+Metric: ROE | Engine: 4744.05% | Source: 26.30% | Difference: 4717.75 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: HAL | Year: 2024
+Metric: ROE | Engine: 3816.58% | Source: 28.90% | Difference: 3787.68 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: LT | Year: 2024
+Metric: ROE | Engine: 77.67% | Source: 10.49% | Difference: 67.18 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: PNB | Year: 2024
+Metric: ROE | Engine: 61.32% | Source: 8.70% | Difference: 52.62 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: TCS | Year: 2024
+Metric: ROE | Engine: 50.94% | Source: 0.52% | Difference: 50.42 percentage points
+Category: data source issue
+Explanation: Source ROE value is anomalous (0.52%). Ratio engine value is retained for analytics; source value is retained for display comparison.
+
+Company: NESTLEIND | Year: 2024
+Metric: ROE | Engine: 117.75% | Source: 135.61% | Difference: 17.86 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: LICI | Year: 2024
+Metric: ROE | Engine: 49.45% | Source: 63.61% | Difference: 14.16 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: BAJAJFINSV | Year: 2024
+Metric: ROE | Engine: 25.85% | Source: 11.72% | Difference: 14.13 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: TATAMOTORS | Year: 2024
+Metric: ROE | Engine: 37.46% | Source: 49.40% | Difference: 11.94 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: TATASTEEL | Year: 2024
+Metric: ROE | Engine: -5.33% | Source: 6.55% | Difference: 11.88 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: GODREJCP | Year: 2024
+Metric: ROE | Engine: -4.45% | Source: 6.77% | Difference: 11.22 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: TRENT | Year: 2024
+Metric: ROE | Engine: 36.31% | Source: 27.20% | Difference: 9.11 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: ADANIPOWER | Year: 2024
+Metric: ROE | Engine: 48.28% | Source: 57.10% | Difference: 8.82 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: COALINDIA | Year: 2024
+Metric: ROE | Engine: 45.17% | Source: 52.00% | Difference: 6.83 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: PFC | Year: 2024
+Metric: ROE | Engine: 26.16% | Source: 19.49% | Difference: 6.67 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: BPCL | Year: 2024
+Metric: ROE | Engine: 35.51% | Source: 41.90% | Difference: 6.39 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: IRCTC | Year: 2024
+Metric: ROE | Engine: 34.40% | Source: 40.40% | Difference: 6.00 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Company: ADANIENT | Year: 2024
+Metric: ROE | Engine: 8.53% | Source: 13.64% | Difference: 5.11 percentage points
+Category: data source issue
+Explanation: Difference between the ratio-engine calculation and the pre-computed company source value.
+
+Companies with missing source ROCE: 1
+Missing ROCE companies: TVSMOTOR
+
+Companies with missing source ROE: 2
+Missing ROE companies: INDIGO, TVSMOTOR
+
+Summary
+----------------------------------------------------------------------
+Ratio-engine values are used for analytics.
+Pre-computed company values are retained for source/display comparison.
+ROCE and ROE differences greater than 5 percentage points are logged.
+Financials high-leverage carve-out was verified separately: 0 Financials records were incorrectly flagged.
