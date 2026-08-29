@@ -80,8 +80,84 @@ def return_on_assets(
     net_profit: float,
     total_assets: float,
 ) -> Optional[float]:
-    """ROA = Net Profit / Total Assets × 100."""
     if total_assets == 0:
         return None
 
     return (net_profit / total_assets) * 100
+
+def debt_to_equity(
+    borrowings: float,
+    equity_capital: float,
+    reserves: float,
+) -> float:
+    if borrowings == 0:
+        return 0
+
+    equity = equity_capital + reserves
+
+    if equity <= 0:
+        return None
+
+    return borrowings / equity
+
+
+def high_leverage_flag(
+    debt_equity: float,
+    broad_sector: str,
+) -> bool:
+    if debt_equity is None:
+        return False
+
+    if str(broad_sector).strip().lower() == "financials":
+        return False
+
+    return debt_equity > 5
+
+
+def interest_coverage_ratio(
+    operating_profit: float,
+    other_income: float,
+    interest: float,
+) -> Optional[float]:
+
+    if interest == 0:
+        return None
+
+    return (operating_profit + other_income) / interest
+
+
+def icr_label(
+    icr: Optional[float],
+) -> Optional[str]:
+    if icr is None:
+        return "Debt Free"
+
+    return None
+
+
+def icr_warning_flag(
+    icr: Optional[float],
+) -> bool:
+    if icr is None:
+        return False
+
+    return icr < 1.5
+
+
+def net_debt(
+    borrowings: float,
+    investments: float,
+) -> float:
+
+    return borrowings - investments
+
+
+def asset_turnover(
+    sales: float,
+    total_assets: float,
+) -> Optional[float]:
+
+    if total_assets == 0:
+        return None
+
+    return sales / total_assets
