@@ -209,159 +209,114 @@ def load_all_to_sqlite(
 
             rejected_rows = 0
 
+
             if table_name != "companies" and "company_id" in dataframe.columns:
                 companies_df = data["companies.xlsx"]
+
                 valid_company_ids = set(
                     companies_df["id"]
                     .dropna()
-                    .astype(str)
-                    .str.strip()
-                    .str.upper()
-                    )
+                    .apply(normalize_ticker)
+                    .dropna()
+                )
+
                 normalized_ids = (
                     dataframe["company_id"]
-                    .fillna("")
-                    .astype(str)
-                    .str.strip()
-                    .str.upper()
-                    )
+                    .apply(normalize_ticker)
+                )
+
                 valid_mask = normalized_ids.isin(valid_company_ids)
 
                 rejected_rows += int((~valid_mask).sum())
 
                 dataframe = dataframe.loc[valid_mask].copy()
-                if table_name in {
-                    "profitandloss",
-                    "balancesheet",
-                    "cashflow",
-                    "documents",
-                    "financial_ratios",
-                    "market_cap",
-}:
-                     if "company_id" in dataframe.columns and "year" in dataframe.columns:
-                         duplicate_subset = ["company_id", "year"]
-                     elif table_name == "stock_prices":
-                         if "company_id" in dataframe.columns and "date" in dataframe.columns:
-                             duplicate_subset = ["company_id", "date"]
-                         elif table_name == "sectors":
-                             if "company_id" in dataframe.columns:
-                                 duplicate_subset = ["company_id"]
-                             elif table_name == "peer_groups":
-                                 if "company_id" in dataframe.columns:
-                                     duplicate_subset = ["company_id", "peer_group_name"]
-                                 elif table_name == "prosandcons":
-                                     if "company_id" in dataframe.columns:
-                                         duplicate_subset = ["company_id"]
-                                     elif table_name == "analysis":
-                                         if "company_id" in dataframe.columns:
-                                             duplicate_subset = ["company_id"]
-                                             if duplicate_subset:
-                                                 before_count = len(dataframe)
-                                                 dataframe = dataframe.drop_duplicates(
-                                                     subset=duplicate_subset,
-                                                     keep="first",
-                                                     )
-                                                 rejected_rows += before_count - len(dataframe)
-
-
-                valid_company_ids = set(
-                    companies_df["id"]
-                    .dropna()
-                    .apply(normalize_ticker)
-                    .dropna()
-                )
-
-                normalized_ids = (
-                    dataframe["company_id"]
-                    .apply(normalize_ticker)
-                )
-
-                valid_mask = (
-                    normalized_ids
-                    .isin(valid_company_ids)
-                )
-
-                rejected_rows += int(
-                    (~valid_mask).sum()
-                )
-
-                dataframe = dataframe.loc[
-                    valid_mask
-                ].copy()
 
                 dataframe["company_id"] = (
-                    normalized_ids.loc[
-                        valid_mask
-                    ]
+                    normalized_ids.loc[valid_mask]
                 )
-                if (
-                    table_name in {
-                    "profitandloss",
-                    "balancesheet",
-                    "cashflow",
-                    "documents",
-                    "financial_ratios",
-                    "market_cap",
-                }
-                and "company_id" in dataframe.columns
-                and "year" in dataframe.columns
-            ):
-                    before_dedup = len(
-                    dataframe
-                )
-                    before_dedup = len(dataframe)
-                    if table_name in {
-                        "profitandloss",
-                        "balancesheet",
-                        "cashflow",
-                        "documents",
-                        "financial_ratios",
-                        "market_cap",
-                        }:
-                        if "company_id" in dataframe.columns and "year" in dataframe.columns:
-                            dataframe = dataframe.drop_duplicates(
-                                subset=["company_id", "year"],
-                                keep="first",
-                                )
-                        elif table_name == "stock_prices":
-                            if "company_id" in dataframe.columns and "date" in dataframe.columns:
-                                dataframe = dataframe.drop_duplicates(
-                                    subset=["company_id", "date"],
-                                    keep="first",
-                                    )
-                            elif table_name == "sectors":
-                                if "company_id" in dataframe.columns:
-                                    dataframe = dataframe.drop_duplicates(
-                                        subset=["company_id"],
-                                        keep="first",
-                                        )
-                                elif table_name == "peer_groups":
-                                    if "company_id" in dataframe.columns and "peer_group_name" in dataframe.columns:
-                                        dataframe = dataframe.drop_duplicates(
-                                            subset=["company_id", "peer_group_name"],
-                                            keep="first",
-                                            )
-                                    elif table_name == "analysis":
-                                        if "company_id" in dataframe.columns:
-                                            dataframe = dataframe.drop_duplicates(
-                                                subset=["company_id"],
-                                                keep="first",
-                                                )
-                                        elif table_name == "prosandcons":
-                                            if "company_id" in dataframe.columns:
-                                                dataframe = dataframe.drop_duplicates(
-                                                    subset=["company_id"],
-                                                    keep="first",
-                                                    )
-                                            else:
-                                                dataframe = dataframe.drop_duplicates(
-                                                    keep="first"
-                                                    )
-                                                duplicate_rows = before_dedup - len(dataframe)
-                                                if duplicate_rows < 0:
-                                                    duplicate_rows = 0
-                                                    rejected_rows += duplicate_rows
 
+            if table_name in {
+                "profitandloss",
+                "balancesheet",
+                "cashflow",
+                "documents",
+                "financial_ratios",
+                "market_cap",
+            }:
+                if (
+                    "company_id" in dataframe.columns
+                    and "year" in dataframe.columns
+                ):
+                    before_dedup = len(dataframe)
+
+                    dataframe = dataframe.drop_duplicates(
+                        subset=["company_id", "year"],
+                        keep="last",
+                    )
+
+                    rejected_rows += (
+                        before_dedup - len(dataframe)
+                    )
+
+            elif table_name == "stock_prices":
+                if (
+                    "company_id" in dataframe.columns
+                    and "date" in dataframe.columns
+                ):
+                    before_dedup = len(dataframe)
+
+                    dataframe = dataframe.drop_duplicates(
+                        subset=["company_id", "date"],
+                        keep="last",
+                    )
+
+                    rejected_rows += (
+                        before_dedup - len(dataframe)
+                    )
+
+            elif table_name == "sectors":
+                if "company_id" in dataframe.columns:
+                    before_dedup = len(dataframe)
+
+                    dataframe = dataframe.drop_duplicates(
+                        subset=["company_id"],
+                        keep="last",
+                    )
+
+                    rejected_rows += (
+                        before_dedup - len(dataframe)
+                    )
+
+            elif table_name == "peer_groups":
+                if (
+                    "company_id" in dataframe.columns
+                    and "peer_group_name" in dataframe.columns
+                ):
+                    before_dedup = len(dataframe)
+
+                    dataframe = dataframe.drop_duplicates(
+                        subset=["company_id", "peer_group_name"],
+                        keep="last",
+                    )
+
+                    rejected_rows += (
+                        before_dedup - len(dataframe)
+                    )
+
+            elif table_name in {"analysis", "prosandcons"}:
+                if "company_id" in dataframe.columns:
+                    before_dedup = len(dataframe)
+
+                    dataframe = dataframe.drop_duplicates(
+                        subset=["company_id"],
+                        keep="last",
+                    )
+
+                    rejected_rows += (
+                        before_dedup - len(dataframe)
+                    )
+
+          
             table_columns = [
                 row[1]
                 for row in connection.execute(

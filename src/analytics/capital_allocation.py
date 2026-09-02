@@ -20,32 +20,47 @@ def main():
 
     query = """
         SELECT
-            c.company_id,
-            c.year,
+            p.company_id,
+            p.year,
             c.operating_activity AS cfo,
             c.investing_activity AS cfi,
             c.financing_activity AS cff,
             p.net_profit AS pat
-        FROM cashflow c
-        LEFT JOIN profitandloss p
-            ON c.company_id = p.company_id
-            AND c.year = p.year
-        ORDER BY c.company_id, c.year
+        FROM profitandloss p
+        LEFT JOIN cashflow c
+            ON p.company_id = c.company_id
+            AND p.year = c.year
+        ORDER BY p.company_id, p.year
     """
 
     df = pd.read_sql(query, con)
     con.close()
 
+    print("P&L base rows:", len(df))
+    print("Companies:", df["company_id"].nunique())
+
     df["cfo_sign"] = df["cfo"].apply(
-        lambda x: "+" if x > 0 else "-" if x < 0 else "0"
+        lambda x: "+"
+        if pd.notna(x) and x > 0
+        else "-"
+        if pd.notna(x) and x < 0
+        else "0"
     )
 
     df["cfi_sign"] = df["cfi"].apply(
-        lambda x: "+" if x > 0 else "-" if x < 0 else "0"
+        lambda x: "+"
+        if pd.notna(x) and x > 0
+        else "-"
+        if pd.notna(x) and x < 0
+        else "0"
     )
 
     df["cff_sign"] = df["cff"].apply(
-        lambda x: "+" if x > 0 else "-" if x < 0 else "0"
+        lambda x: "+"
+        if pd.notna(x) and x > 0
+        else "-"
+        if pd.notna(x) and x < 0
+        else "0"
     )
 
     df["cfo_pat_ratio"] = df.apply(
@@ -75,7 +90,11 @@ def main():
             "cff_sign",
             "pattern_label",
         ]
-    ]
+    ].copy()
+
+    output = output.drop_duplicates(
+        subset=["company_id", "year"]
+    )
 
     output.to_csv(
         OUTPUT_PATH,
@@ -84,6 +103,7 @@ def main():
 
     print("Capital allocation file generated.")
     print("Rows:", len(output))
+    print("Unique company-year:", output[["company_id", "year"]].drop_duplicates().shape[0])
     print("Companies:", output["company_id"].nunique())
     print("\nPattern counts:")
     print(output["pattern_label"].value_counts())

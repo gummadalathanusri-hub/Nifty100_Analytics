@@ -1,15 +1,15 @@
 company_id,year,cfo_sign,cfi_sign,cff_sign,pattern_label
 ABB,2012,+,-,-,Reinvestor
-ABB,2014,+,-,-,Reinvestor
-ABB,2015,+,-,-,Reinvestor
-ABB,2016,+,-,-,Reinvestor
+ABB,2014,0,0,0,Mixed
+ABB,2015,-,-,+,Growth Funded by Debt
+ABB,2016,+,-,-,Shareholder Returns
 ABB,2017,+,-,-,Shareholder Returns
-ABB,2018,+,-,-,Reinvestor
-ABB,2019,+,-,-,Shareholder Returns
-ABB,2020,+,-,-,Shareholder Returns
+ABB,2018,+,-,+,Mixed
+ABB,2019,+,-,+,Mixed
+ABB,2020,+,-,+,Mixed
 ABB,2021,+,-,-,Shareholder Returns
 ABB,2022,+,-,-,Shareholder Returns
-ABB,2023,+,-,-,Reinvestor
+ABB,2023,+,-,+,Mixed
 ABB,2024,+,-,-,Shareholder Returns
 ADANIENSOL,2014,0,0,0,Mixed
 ADANIENSOL,2015,-,-,+,Growth Funded by Debt
@@ -407,6 +407,10 @@ GRASIM,2021,+,-,-,Shareholder Returns
 GRASIM,2022,+,-,-,Reinvestor
 GRASIM,2023,-,-,+,Growth Funded by Debt
 GRASIM,2024,-,-,+,Growth Funded by Debt
+HAL,2013,0,0,0,Mixed
+HAL,2014,0,0,0,Mixed
+HAL,2015,0,0,0,Mixed
+HAL,2016,0,0,0,Mixed
 HAL,2017,-,+,-,Mixed
 HAL,2018,-,+,-,Mixed
 HAL,2019,-,+,+,Distress Signal
@@ -414,7 +418,7 @@ HAL,2020,+,-,+,Mixed
 HAL,2021,+,-,-,Shareholder Returns
 HAL,2022,+,-,-,Shareholder Returns
 HAL,2023,+,-,-,Shareholder Returns
-HAL,2024,+,-,-,Shareholder Returns
+HAL,2024,+,-,-,Reinvestor
 HAVELLS,2013,+,-,-,Shareholder Returns
 HAVELLS,2014,+,-,-,Shareholder Returns
 HAVELLS,2015,+,-,-,Shareholder Returns
@@ -521,7 +525,7 @@ ICICIGI,2020,+,-,-,Shareholder Returns
 ICICIGI,2021,+,-,-,Shareholder Returns
 ICICIGI,2022,+,+,-,Liquidating Assets
 ICICIGI,2023,+,-,-,Shareholder Returns
-ICICIGI,2024,+,-,-,Shareholder Returns
+ICICIGI,2024,+,-,-,Reinvestor
 ICICIPRULI,2013,-,+,-,Mixed
 ICICIPRULI,2014,-,+,-,Mixed
 ICICIPRULI,2015,+,-,-,Reinvestor
@@ -592,6 +596,9 @@ IRCTC,2021,+,-,-,Shareholder Returns
 IRCTC,2022,+,-,-,Reinvestor
 IRCTC,2023,+,-,-,Reinvestor
 IRCTC,2024,+,-,-,Reinvestor
+IRFC,2013,0,0,0,Mixed
+IRFC,2014,0,0,0,Mixed
+IRFC,2015,0,0,0,Mixed
 IRFC,2016,-,+,+,Distress Signal
 IRFC,2017,-,+,+,Distress Signal
 IRFC,2018,-,+,+,Distress Signal
@@ -669,6 +676,9 @@ LICI,2021,+,+,-,Liquidating Assets
 LICI,2022,-,+,0,Mixed
 LICI,2023,+,-,-,Shareholder Returns
 LICI,2024,+,-,-,Reinvestor
+LODHA,2011,0,0,0,Mixed
+LODHA,2012,0,0,0,Mixed
+LODHA,2015,0,0,0,Mixed
 LODHA,2016,+,-,+,Mixed
 LODHA,2017,+,-,-,Shareholder Returns
 LODHA,2018,+,-,+,Mixed
@@ -989,7 +999,7 @@ TATASTEEL,2020,+,-,-,Shareholder Returns
 TATASTEEL,2021,+,-,-,Shareholder Returns
 TATASTEEL,2022,+,-,-,Shareholder Returns
 TATASTEEL,2023,+,-,-,Shareholder Returns
-TATASTEEL,2024,+,-,-,Reinvestor
+TATASTEEL,2024,+,-,-,Shareholder Returns
 TCS,2013,+,-,-,Reinvestor
 TCS,2014,+,-,-,Reinvestor
 TCS,2015,+,-,-,Reinvestor
@@ -1062,3 +1072,95 @@ TVSMOTOR,2021,+,-,+,Mixed
 TVSMOTOR,2022,-,-,+,Growth Funded by Debt
 TVSMOTOR,2023,-,-,+,Growth Funded by Debt
 TVSMOTOR,2024,-,-,+,Growth Funded by Debt
+ULTRACEMCO,2013,0,0,0,Mixed
+ULTRACEMCO,2014,0,0,0,Mixed
+ULTRACEMCO,2015,0,0,0,Mixed
+ULTRACEMCO,2016,0,0,0,Mixed
+ULTRACEMCO,2017,0,0,0,Mixed
+ULTRACEMCO,2018,0,0,0,Mixed
+ULTRACEMCO,2019,0,0,0,Mixed
+ULTRACEMCO,2020,0,0,0,Mixed
+ULTRACEMCO,2021,0,0,0,Mixed
+ULTRACEMCO,2022,0,0,0,Mixed
+ULTRACEMCO,2023,0,0,0,Mixed
+ULTRACEMCO,2024,0,0,0,Mixed
+UNIONBANK,2013,0,0,0,Mixed
+UNIONBANK,2014,0,0,0,Mixed
+UNIONBANK,2015,0,0,0,Mixed
+UNIONBANK,2016,0,0,0,Mixed
+UNIONBANK,2017,0,0,0,Mixed
+UNIONBANK,2018,0,0,0,Mixed
+UNIONBANK,2019,0,0,0,Mixed
+UNIONBANK,2020,0,0,0,Mixed
+UNIONBANK,2021,0,0,0,Mixed
+UNIONBANK,2022,0,0,0,Mixed
+UNIONBANK,2023,0,0,0,Mixed
+UNIONBANK,2024,0,0,0,Mixed
+UNITDSPR,2013,0,0,0,Mixed
+UNITDSPR,2014,0,0,0,Mixed
+UNITDSPR,2015,0,0,0,Mixed
+UNITDSPR,2016,0,0,0,Mixed
+UNITDSPR,2017,0,0,0,Mixed
+UNITDSPR,2018,0,0,0,Mixed
+UNITDSPR,2019,0,0,0,Mixed
+UNITDSPR,2020,0,0,0,Mixed
+UNITDSPR,2021,0,0,0,Mixed
+UNITDSPR,2022,0,0,0,Mixed
+UNITDSPR,2023,0,0,0,Mixed
+UNITDSPR,2024,0,0,0,Mixed
+VBL,2012,0,0,0,Mixed
+VBL,2013,0,0,0,Mixed
+VBL,2014,0,0,0,Mixed
+VBL,2015,0,0,0,Mixed
+VBL,2016,0,0,0,Mixed
+VBL,2017,0,0,0,Mixed
+VBL,2018,0,0,0,Mixed
+VBL,2019,0,0,0,Mixed
+VBL,2020,0,0,0,Mixed
+VBL,2021,0,0,0,Mixed
+VBL,2022,0,0,0,Mixed
+VBL,2023,0,0,0,Mixed
+VBL,2024,0,0,0,Mixed
+VEDL,2013,0,0,0,Mixed
+VEDL,2014,0,0,0,Mixed
+VEDL,2015,0,0,0,Mixed
+VEDL,2016,0,0,0,Mixed
+VEDL,2017,0,0,0,Mixed
+VEDL,2018,0,0,0,Mixed
+VEDL,2019,0,0,0,Mixed
+VEDL,2020,0,0,0,Mixed
+VEDL,2021,0,0,0,Mixed
+VEDL,2022,0,0,0,Mixed
+VEDL,2023,0,0,0,Mixed
+VEDL,2024,0,0,0,Mixed
+WIPRO,2013,0,0,0,Mixed
+WIPRO,2014,0,0,0,Mixed
+WIPRO,2015,0,0,0,Mixed
+WIPRO,2016,0,0,0,Mixed
+WIPRO,2017,0,0,0,Mixed
+WIPRO,2018,0,0,0,Mixed
+WIPRO,2019,0,0,0,Mixed
+WIPRO,2020,0,0,0,Mixed
+WIPRO,2021,0,0,0,Mixed
+WIPRO,2022,0,0,0,Mixed
+WIPRO,2023,0,0,0,Mixed
+WIPRO,2024,0,0,0,Mixed
+ZOMATO,2018,0,0,0,Mixed
+ZOMATO,2019,0,0,0,Mixed
+ZOMATO,2020,0,0,0,Mixed
+ZOMATO,2021,0,0,0,Mixed
+ZOMATO,2022,0,0,0,Mixed
+ZOMATO,2023,0,0,0,Mixed
+ZOMATO,2024,0,0,0,Mixed
+ZYDUSLIFE,2013,0,0,0,Mixed
+ZYDUSLIFE,2014,0,0,0,Mixed
+ZYDUSLIFE,2015,0,0,0,Mixed
+ZYDUSLIFE,2016,0,0,0,Mixed
+ZYDUSLIFE,2017,0,0,0,Mixed
+ZYDUSLIFE,2018,0,0,0,Mixed
+ZYDUSLIFE,2019,0,0,0,Mixed
+ZYDUSLIFE,2020,0,0,0,Mixed
+ZYDUSLIFE,2021,0,0,0,Mixed
+ZYDUSLIFE,2022,0,0,0,Mixed
+ZYDUSLIFE,2023,0,0,0,Mixed
+ZYDUSLIFE,2024,0,0,0,Mixed

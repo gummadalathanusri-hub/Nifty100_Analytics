@@ -6,7 +6,6 @@ TICKER_ALIASES = {
     "AGTL": "ATGL",
 }
 
-
 def normalize_year(value: object) -> Optional[int]:
     if value is None:
         return None
@@ -15,6 +14,10 @@ def normalize_year(value: object) -> Optional[int]:
 
     if not text or text.lower() in {"nan", "none", "nat"}:
         return None
+
+
+    if text.upper() == "TTM":
+        return 2024
 
     match = re.search(r"\b(19\d{2}|20\d{2})\b", text)
 
@@ -28,7 +31,6 @@ def normalize_year(value: object) -> Optional[int]:
         return 2000 + year if year <= 49 else 1900 + year
 
     return None
-
 
 def normalize_ticker(value: object) -> Optional[str]:
     if value is None:
