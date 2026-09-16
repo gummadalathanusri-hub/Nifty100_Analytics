@@ -1,0 +1,11 @@
+company_id,metric_type,analysis_value_pct,ratio_engine_value_pct,divergence_pct,review_flag
+SBILIFE,compounded_sales_growth,24.0,23.86901095947904,0.5487828580050119,OK
+SBILIFE,compounded_profit_growth,6.0,12.684779057300943,52.69921554883846,Manual review
+TCS,compounded_sales_growth,10.0,11.471227124427097,12.825368275502381,Manual review
+TCS,compounded_profit_growth,8.0,9.19856921974651,13.029952714532483,Manual review
+WIPRO,compounded_sales_growth,9.0,8.747228996316725,2.8897266070170526,OK
+WIPRO,compounded_profit_growth,4.0,4.26448450032566,6.202027473788751,Manual review
+HDFCBANK,compounded_sales_growth,22.0,25.62441319616129,14.144375398630594,Manual review
+HDFCBANK,compounded_profit_growth,23.0,26.310990925321832,12.58406015463035,Manual review
+INFY,compounded_sales_growth,13.0,14.114975447352096,7.899237597053421,Manual review
+INFY,compounded_profit_growth,11.0,12.433220957678405,11.527350495555119,Manual review
