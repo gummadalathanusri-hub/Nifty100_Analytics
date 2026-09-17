@@ -255,4 +255,4 @@ else:
 
 st.caption(
     "Valuation outputs are generated from the latest available market, financial ratio and sector data."
-)
+) 

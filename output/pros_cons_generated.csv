@@ -1,0 +1,898 @@
+company_id,type,rule_id,text,confidence_pct
+ABB,con,C02,FCF negative for 3 consecutive years,90
+ABB,pro,P01,ROE >20% sustained for 3+ years,83
+ABB,pro,P05,OPM >25% in the latest year,71
+ABB,pro,P06,PAT CAGR >20% over 5 years,74
+ABB,pro,P07,ICR >10 or Debt Free,95
+ABB,pro,P09,EPS CAGR >15% over 5 years,83
+ABB,pro,P10,ROE improving for 3 consecutive years,85
+ABB,pro,P12,Assets growing while borrowings are declining,85
+ADANIENSOL,con,C02,FCF negative for 3 consecutive years,90
+ADANIENSOL,con,C03,OPM declining for 3 consecutive years,85
+ADANIENSOL,con,C05,Revenue is declining year over year,80
+ADANIENSOL,con,C08,D/E rising for 3 consecutive years,85
+ADANIENSOL,con,C10,ROCE <10%,77
+ADANIENSOL,con,C11,Net Debt >3x EBITDA,75
+ADANIENSOL,pro,P04,Revenue CAGR >15% over 5 years,85
+ADANIENSOL,pro,P05,OPM >25% in the latest year,76
+ADANIENSOL,pro,P10,ROE improving for 3 consecutive years,85
+ADANIENSOL,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+ADANIENSOL,pro,P12,Assets growing while borrowings are declining,85
+ADANIENT,con,C05,Revenue is declining year over year,80
+ADANIENT,con,C08,D/E rising for 3 consecutive years,85
+ADANIENT,con,C09,EPS declining for 3 consecutive years,85
+ADANIENT,pro,P04,Revenue CAGR >15% over 5 years,78
+ADANIENT,pro,P06,PAT CAGR >20% over 5 years,95
+ADANIENT,pro,P09,EPS CAGR >15% over 5 years,95
+ADANIENT,pro,P10,ROE improving for 3 consecutive years,85
+ADANIENT,pro,P12,Assets growing while borrowings are declining,85
+ADANIGREEN,con,C01,D/E >2 for a non-financial company,92
+ADANIGREEN,con,C02,FCF negative for 3 consecutive years,90
+ADANIGREEN,con,C03,OPM declining for 3 consecutive years,85
+ADANIGREEN,con,C08,D/E rising for 3 consecutive years,85
+ADANIGREEN,con,C09,EPS declining for 3 consecutive years,85
+ADANIGREEN,pro,P04,Revenue CAGR >15% over 5 years,95
+ADANIGREEN,pro,P05,OPM >25% in the latest year,95
+ADANIGREEN,pro,P10,ROE improving for 3 consecutive years,85
+ADANIPORTS,con,C03,OPM declining for 3 consecutive years,85
+ADANIPORTS,con,C05,Revenue is declining year over year,80
+ADANIPORTS,con,C08,D/E rising for 3 consecutive years,85
+ADANIPORTS,pro,P01,ROE >20% sustained for 3+ years,70
+ADANIPORTS,pro,P04,Revenue CAGR >15% over 5 years,79
+ADANIPORTS,pro,P05,OPM >25% in the latest year,95
+ADANIPORTS,pro,P09,EPS CAGR >15% over 5 years,76
+ADANIPORTS,pro,P10,ROE improving for 3 consecutive years,85
+ADANIPORTS,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+ADANIPORTS,pro,P12,Assets growing while borrowings are declining,85
+ADANIPOWER,con,C05,Revenue is declining year over year,80
+ADANIPOWER,con,C08,D/E rising for 3 consecutive years,85
+ADANIPOWER,pro,P01,ROE >20% sustained for 3+ years,72
+ADANIPOWER,pro,P02,FCF positive for 5+ consecutive years,90
+ADANIPOWER,pro,P04,Revenue CAGR >15% over 5 years,75
+ADANIPOWER,pro,P05,OPM >25% in the latest year,86
+ADANIPOWER,pro,P10,ROE improving for 3 consecutive years,85
+ADANIPOWER,pro,P12,Assets growing while borrowings are declining,85
+AMBUJACEM,con,C03,OPM declining for 3 consecutive years,85
+AMBUJACEM,con,C05,Revenue is declining year over year,80
+AMBUJACEM,con,C12,Revenue CAGR <5% over 5 years,76
+AMBUJACEM,pro,P02,FCF positive for 5+ consecutive years,90
+AMBUJACEM,pro,P07,ICR >10 or Debt Free,90
+AMBUJACEM,pro,P10,ROE improving for 3 consecutive years,85
+AMBUJACEM,pro,P12,Assets growing while borrowings are declining,85
+APOLLOHOSP,con,C02,FCF negative for 3 consecutive years,90
+APOLLOHOSP,con,C03,OPM declining for 3 consecutive years,85
+APOLLOHOSP,con,C05,Revenue is declining year over year,80
+APOLLOHOSP,con,C08,D/E rising for 3 consecutive years,85
+APOLLOHOSP,con,C09,EPS declining for 3 consecutive years,85
+APOLLOHOSP,con,C11,Net Debt >3x EBITDA,78
+APOLLOHOSP,pro,P02,FCF positive for 5+ consecutive years,90
+APOLLOHOSP,pro,P04,Revenue CAGR >15% over 5 years,72
+APOLLOHOSP,pro,P06,PAT CAGR >20% over 5 years,95
+APOLLOHOSP,pro,P08,Dividend Yield >2% with positive FCF,76
+APOLLOHOSP,pro,P09,EPS CAGR >15% over 5 years,95
+APOLLOHOSP,pro,P10,ROE improving for 3 consecutive years,85
+APOLLOHOSP,pro,P12,Assets growing while borrowings are declining,85
+ASIANPAINT,con,C08,D/E rising for 3 consecutive years,85
+ASIANPAINT,con,C11,Net Debt >3x EBITDA,77
+ASIANPAINT,pro,P01,ROE >20% sustained for 3+ years,75
+ASIANPAINT,pro,P02,FCF positive for 5+ consecutive years,90
+ASIANPAINT,pro,P07,ICR >10 or Debt Free,95
+ASIANPAINT,pro,P08,Dividend Yield >2% with positive FCF,72
+ASIANPAINT,pro,P09,EPS CAGR >15% over 5 years,73
+ASIANPAINT,pro,P12,Assets growing while borrowings are declining,85
+ATGL,con,C02,FCF negative for 3 consecutive years,90
+ATGL,con,C03,OPM declining for 3 consecutive years,85
+ATGL,con,C05,Revenue is declining year over year,80
+ATGL,con,C08,D/E rising for 3 consecutive years,85
+ATGL,con,C11,Net Debt >3x EBITDA,89
+ATGL,pro,P01,ROE >20% sustained for 3+ years,70
+ATGL,pro,P04,Revenue CAGR >15% over 5 years,82
+ATGL,pro,P06,PAT CAGR >20% over 5 years,75
+ATGL,pro,P07,ICR >10 or Debt Free,72
+ATGL,pro,P09,EPS CAGR >15% over 5 years,84
+ATGL,pro,P10,ROE improving for 3 consecutive years,85
+AXISBANK,con,C03,OPM declining for 3 consecutive years,85
+AXISBANK,con,C08,D/E rising for 3 consecutive years,85
+AXISBANK,con,C09,EPS declining for 3 consecutive years,85
+AXISBANK,con,C10,ROCE <10%,81
+AXISBANK,pro,P04,Revenue CAGR >15% over 5 years,73
+AXISBANK,pro,P05,OPM >25% in the latest year,84
+AXISBANK,pro,P06,PAT CAGR >20% over 5 years,95
+AXISBANK,pro,P09,EPS CAGR >15% over 5 years,95
+AXISBANK,pro,P10,ROE improving for 3 consecutive years,85
+BAJAJ-AUTO,con,C03,OPM declining for 3 consecutive years,85
+BAJAJ-AUTO,con,C05,Revenue is declining year over year,80
+BAJAJ-AUTO,con,C08,D/E rising for 3 consecutive years,85
+BAJAJ-AUTO,pro,P01,ROE >20% sustained for 3+ years,73
+BAJAJ-AUTO,pro,P02,FCF positive for 5+ consecutive years,90
+BAJAJ-AUTO,pro,P07,ICR >10 or Debt Free,95
+BAJAJ-AUTO,pro,P08,Dividend Yield >2% with positive FCF,79
+BAJAJ-AUTO,pro,P10,ROE improving for 3 consecutive years,85
+BAJAJ-AUTO,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+BAJAJ-AUTO,pro,P12,Assets growing while borrowings are declining,85
+BAJAJFINSV,con,C02,FCF negative for 3 consecutive years,90
+BAJAJFINSV,con,C03,OPM declining for 3 consecutive years,85
+BAJAJFINSV,con,C05,Revenue is declining year over year,80
+BAJAJFINSV,con,C08,D/E rising for 3 consecutive years,85
+BAJAJFINSV,pro,P01,ROE >20% sustained for 3+ years,73
+BAJAJFINSV,pro,P04,Revenue CAGR >15% over 5 years,84
+BAJAJFINSV,pro,P05,OPM >25% in the latest year,83
+BAJAJFINSV,pro,P06,PAT CAGR >20% over 5 years,76
+BAJAJFINSV,pro,P09,EPS CAGR >15% over 5 years,80
+BAJAJFINSV,pro,P10,ROE improving for 3 consecutive years,85
+BAJAJHLDNG,con,C03,OPM declining for 3 consecutive years,85
+BAJAJHLDNG,con,C05,Revenue is declining year over year,80
+BAJAJHLDNG,con,C11,Net Debt >3x EBITDA,87
+BAJAJHLDNG,pro,P04,Revenue CAGR >15% over 5 years,95
+BAJAJHLDNG,pro,P05,OPM >25% in the latest year,95
+BAJAJHLDNG,pro,P07,ICR >10 or Debt Free,95
+BAJAJHLDNG,pro,P08,Dividend Yield >2% with positive FCF,77
+BAJAJHLDNG,pro,P09,EPS CAGR >15% over 5 years,77
+BAJAJHLDNG,pro,P10,ROE improving for 3 consecutive years,85
+BAJAJHLDNG,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+BAJAJHLDNG,pro,P12,Assets growing while borrowings are declining,85
+BAJFINANCE,con,C02,FCF negative for 3 consecutive years,90
+BAJFINANCE,con,C03,OPM declining for 3 consecutive years,85
+BAJFINANCE,con,C08,D/E rising for 3 consecutive years,85
+BAJFINANCE,pro,P04,Revenue CAGR >15% over 5 years,89
+BAJFINANCE,pro,P05,OPM >25% in the latest year,76
+BAJFINANCE,pro,P06,PAT CAGR >20% over 5 years,83
+BAJFINANCE,pro,P07,ICR >10 or Debt Free,95
+BAJFINANCE,pro,P09,EPS CAGR >15% over 5 years,91
+BAJFINANCE,pro,P10,ROE improving for 3 consecutive years,85
+BANKBARODA,con,C03,OPM declining for 3 consecutive years,85
+BANKBARODA,con,C05,Revenue is declining year over year,80
+BANKBARODA,con,C09,EPS declining for 3 consecutive years,85
+BANKBARODA,con,C10,ROCE <10%,82
+BANKBARODA,pro,P04,Revenue CAGR >15% over 5 years,75
+BANKBARODA,pro,P05,OPM >25% in the latest year,85
+BANKBARODA,pro,P06,PAT CAGR >20% over 5 years,95
+BANKBARODA,pro,P09,EPS CAGR >15% over 5 years,95
+BANKBARODA,pro,P10,ROE improving for 3 consecutive years,85
+BANKBARODA,pro,P12,Assets growing while borrowings are declining,85
+BEL,con,C08,D/E rising for 3 consecutive years,85
+BEL,pro,P01,ROE >20% sustained for 3+ years,95
+BEL,pro,P02,FCF positive for 5+ consecutive years,90
+BEL,pro,P05,OPM >25% in the latest year,72
+BEL,pro,P07,ICR >10 or Debt Free,95
+BEL,pro,P10,ROE improving for 3 consecutive years,85
+BEL,pro,P12,Assets growing while borrowings are declining,85
+BHARTIARTL,con,C01,D/E >2 for a non-financial company,73
+BHARTIARTL,con,C03,OPM declining for 3 consecutive years,85
+BHARTIARTL,con,C05,Revenue is declining year over year,80
+BHARTIARTL,con,C08,D/E rising for 3 consecutive years,85
+BHARTIARTL,con,C09,EPS declining for 3 consecutive years,85
+BHARTIARTL,con,C11,Net Debt >3x EBITDA,84
+BHARTIARTL,pro,P05,OPM >25% in the latest year,95
+BHARTIARTL,pro,P06,PAT CAGR >20% over 5 years,95
+BHARTIARTL,pro,P09,EPS CAGR >15% over 5 years,95
+BHARTIARTL,pro,P10,ROE improving for 3 consecutive years,85
+BHARTIARTL,pro,P12,Assets growing while borrowings are declining,85
+BHEL,con,C03,OPM declining for 3 consecutive years,85
+BHEL,con,C05,Revenue is declining year over year,80
+BHEL,con,C08,D/E rising for 3 consecutive years,85
+BHEL,con,C09,EPS declining for 3 consecutive years,85
+BHEL,con,C10,ROCE <10%,88
+BHEL,con,C11,Net Debt >3x EBITDA,83
+BHEL,con,C12,Revenue CAGR <5% over 5 years,95
+BHEL,pro,P10,ROE improving for 3 consecutive years,85
+BHEL,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+BHEL,pro,P12,Assets growing while borrowings are declining,85
+BOSCHLTD,con,C03,OPM declining for 3 consecutive years,85
+BOSCHLTD,con,C05,Revenue is declining year over year,80
+BOSCHLTD,con,C09,EPS declining for 3 consecutive years,85
+BOSCHLTD,pro,P02,FCF positive for 5+ consecutive years,90
+BOSCHLTD,pro,P07,ICR >10 or Debt Free,95
+BOSCHLTD,pro,P08,Dividend Yield >2% with positive FCF,81
+BOSCHLTD,pro,P10,ROE improving for 3 consecutive years,85
+BOSCHLTD,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+BOSCHLTD,pro,P12,Assets growing while borrowings are declining,85
+BPCL,con,C03,OPM declining for 3 consecutive years,85
+BPCL,con,C05,Revenue is declining year over year,80
+BPCL,con,C08,D/E rising for 3 consecutive years,85
+BPCL,con,C09,EPS declining for 3 consecutive years,85
+BPCL,con,C11,Net Debt >3x EBITDA,90
+BPCL,pro,P01,ROE >20% sustained for 3+ years,70
+BPCL,pro,P10,ROE improving for 3 consecutive years,85
+BPCL,pro,P12,Assets growing while borrowings are declining,85
+BRITANNIA,con,C08,D/E rising for 3 consecutive years,85
+BRITANNIA,con,C11,Net Debt >3x EBITDA,83
+BRITANNIA,pro,P01,ROE >20% sustained for 3+ years,95
+BRITANNIA,pro,P02,FCF positive for 5+ consecutive years,90
+BRITANNIA,pro,P07,ICR >10 or Debt Free,95
+BRITANNIA,pro,P10,ROE improving for 3 consecutive years,85
+BRITANNIA,pro,P12,Assets growing while borrowings are declining,85
+CANBK,con,C03,OPM declining for 3 consecutive years,85
+CANBK,con,C05,Revenue is declining year over year,80
+CANBK,con,C08,D/E rising for 3 consecutive years,85
+CANBK,con,C10,ROCE <10%,82
+CANBK,pro,P02,FCF positive for 5+ consecutive years,90
+CANBK,pro,P04,Revenue CAGR >15% over 5 years,78
+CANBK,pro,P05,OPM >25% in the latest year,88
+CANBK,pro,P06,PAT CAGR >20% over 5 years,95
+CANBK,pro,P08,Dividend Yield >2% with positive FCF,80
+CANBK,pro,P09,EPS CAGR >15% over 5 years,95
+CANBK,pro,P10,ROE improving for 3 consecutive years,85
+CHOLAFIN,con,C02,FCF negative for 3 consecutive years,90
+CHOLAFIN,con,C03,OPM declining for 3 consecutive years,85
+CHOLAFIN,con,C08,D/E rising for 3 consecutive years,85
+CHOLAFIN,pro,P04,Revenue CAGR >15% over 5 years,86
+CHOLAFIN,pro,P05,OPM >25% in the latest year,74
+CHOLAFIN,pro,P06,PAT CAGR >20% over 5 years,78
+CHOLAFIN,pro,P07,ICR >10 or Debt Free,94
+CHOLAFIN,pro,P09,EPS CAGR >15% over 5 years,85
+CHOLAFIN,pro,P10,ROE improving for 3 consecutive years,85
+CIPLA,con,C03,OPM declining for 3 consecutive years,85
+CIPLA,con,C08,D/E rising for 3 consecutive years,85
+CIPLA,con,C09,EPS declining for 3 consecutive years,85
+CIPLA,con,C11,Net Debt >3x EBITDA,97
+CIPLA,pro,P02,FCF positive for 5+ consecutive years,90
+CIPLA,pro,P05,OPM >25% in the latest year,95
+CIPLA,pro,P06,PAT CAGR >20% over 5 years,79
+CIPLA,pro,P07,ICR >10 or Debt Free,92
+CIPLA,pro,P09,EPS CAGR >15% over 5 years,88
+CIPLA,pro,P12,Assets growing while borrowings are declining,85
+COALINDIA,con,C03,OPM declining for 3 consecutive years,85
+COALINDIA,con,C05,Revenue is declining year over year,80
+COALINDIA,con,C08,D/E rising for 3 consecutive years,85
+COALINDIA,con,C09,EPS declining for 3 consecutive years,85
+COALINDIA,con,C11,Net Debt >3x EBITDA,86
+COALINDIA,pro,P01,ROE >20% sustained for 3+ years,83
+COALINDIA,pro,P02,FCF positive for 5+ consecutive years,90
+COALINDIA,pro,P05,OPM >25% in the latest year,95
+COALINDIA,pro,P07,ICR >10 or Debt Free,72
+COALINDIA,pro,P08,Dividend Yield >2% with positive FCF,83
+COALINDIA,pro,P10,ROE improving for 3 consecutive years,85
+COALINDIA,pro,P12,Assets growing while borrowings are declining,85
+DABUR,con,C03,OPM declining for 3 consecutive years,85
+DABUR,con,C05,Revenue is declining year over year,80
+DABUR,con,C08,D/E rising for 3 consecutive years,85
+DABUR,pro,P01,ROE >20% sustained for 3+ years,70
+DABUR,pro,P02,FCF positive for 5+ consecutive years,90
+DABUR,pro,P07,ICR >10 or Debt Free,83
+DABUR,pro,P08,Dividend Yield >2% with positive FCF,77
+DABUR,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+DABUR,pro,P12,Assets growing while borrowings are declining,85
+DIVISLAB,con,C03,OPM declining for 3 consecutive years,85
+DIVISLAB,con,C05,Revenue is declining year over year,80
+DIVISLAB,con,C08,D/E rising for 3 consecutive years,85
+DIVISLAB,con,C09,EPS declining for 3 consecutive years,85
+DIVISLAB,pro,P01,ROE >20% sustained for 3+ years,70
+DIVISLAB,pro,P02,FCF positive for 5+ consecutive years,90
+DIVISLAB,pro,P05,OPM >25% in the latest year,76
+DIVISLAB,pro,P07,ICR >10 or Debt Free,95
+DIVISLAB,pro,P10,ROE improving for 3 consecutive years,85
+DIVISLAB,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+DIVISLAB,pro,P12,Assets growing while borrowings are declining,85
+DLF,con,C03,OPM declining for 3 consecutive years,85
+DLF,con,C05,Revenue is declining year over year,80
+DLF,con,C08,D/E rising for 3 consecutive years,85
+DLF,con,C09,EPS declining for 3 consecutive years,85
+DLF,con,C10,ROCE <10%,84
+DLF,con,C12,Revenue CAGR <5% over 5 years,95
+DLF,pro,P02,FCF positive for 5+ consecutive years,90
+DLF,pro,P05,OPM >25% in the latest year,72
+DLF,pro,P06,PAT CAGR >20% over 5 years,76
+DLF,pro,P08,Dividend Yield >2% with positive FCF,73
+DLF,pro,P09,EPS CAGR >15% over 5 years,80
+DLF,pro,P10,ROE improving for 3 consecutive years,85
+DLF,pro,P12,Assets growing while borrowings are declining,85
+DMART,con,C02,FCF negative for 3 consecutive years,90
+DMART,con,C05,Revenue is declining year over year,80
+DMART,con,C08,D/E rising for 3 consecutive years,85
+DMART,con,C11,Net Debt >3x EBITDA,89
+DMART,pro,P04,Revenue CAGR >15% over 5 years,83
+DMART,pro,P06,PAT CAGR >20% over 5 years,76
+DMART,pro,P07,ICR >10 or Debt Free,95
+DMART,pro,P09,EPS CAGR >15% over 5 years,84
+DMART,pro,P10,ROE improving for 3 consecutive years,85
+DMART,pro,P12,Assets growing while borrowings are declining,85
+DRREDDY,con,C03,OPM declining for 3 consecutive years,85
+DRREDDY,con,C05,Revenue is declining year over year,80
+DRREDDY,con,C08,D/E rising for 3 consecutive years,85
+DRREDDY,con,C09,EPS declining for 3 consecutive years,85
+DRREDDY,pro,P01,ROE >20% sustained for 3+ years,70
+DRREDDY,pro,P02,FCF positive for 5+ consecutive years,90
+DRREDDY,pro,P04,Revenue CAGR >15% over 5 years,70
+DRREDDY,pro,P05,OPM >25% in the latest year,72
+DRREDDY,pro,P06,PAT CAGR >20% over 5 years,73
+DRREDDY,pro,P07,ICR >10 or Debt Free,95
+DRREDDY,pro,P09,EPS CAGR >15% over 5 years,82
+DRREDDY,pro,P10,ROE improving for 3 consecutive years,85
+DRREDDY,pro,P12,Assets growing while borrowings are declining,85
+EICHERMOT,con,C02,FCF negative for 3 consecutive years,90
+EICHERMOT,con,C03,OPM declining for 3 consecutive years,85
+EICHERMOT,con,C05,Revenue is declining year over year,80
+EICHERMOT,con,C08,D/E rising for 3 consecutive years,85
+EICHERMOT,con,C09,EPS declining for 3 consecutive years,85
+EICHERMOT,pro,P01,ROE >20% sustained for 3+ years,72
+EICHERMOT,pro,P02,FCF positive for 5+ consecutive years,90
+EICHERMOT,pro,P05,OPM >25% in the latest year,71
+EICHERMOT,pro,P07,ICR >10 or Debt Free,95
+EICHERMOT,pro,P08,Dividend Yield >2% with positive FCF,82
+EICHERMOT,pro,P10,ROE improving for 3 consecutive years,85
+EICHERMOT,pro,P12,Assets growing while borrowings are declining,85
+GAIL,con,C03,OPM declining for 3 consecutive years,85
+GAIL,con,C05,Revenue is declining year over year,80
+GAIL,con,C08,D/E rising for 3 consecutive years,85
+GAIL,con,C09,EPS declining for 3 consecutive years,85
+GAIL,pro,P02,FCF positive for 5+ consecutive years,90
+GAIL,pro,P07,ICR >10 or Debt Free,95
+GAIL,pro,P10,ROE improving for 3 consecutive years,85
+GAIL,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+GAIL,pro,P12,Assets growing while borrowings are declining,85
+GODREJCP,con,C03,OPM declining for 3 consecutive years,85
+GODREJCP,con,C04,Latest net profit is negative,95
+GODREJCP,con,C05,Revenue is declining year over year,80
+GODREJCP,con,C08,D/E rising for 3 consecutive years,85
+GODREJCP,pro,P01,ROE >20% sustained for 3+ years,70
+GODREJCP,pro,P02,FCF positive for 5+ consecutive years,90
+GODREJCP,pro,P10,ROE improving for 3 consecutive years,85
+GODREJCP,pro,P12,Assets growing while borrowings are declining,85
+GRASIM,con,C03,OPM declining for 3 consecutive years,85
+GRASIM,con,C05,Revenue is declining year over year,80
+GRASIM,con,C08,D/E rising for 3 consecutive years,85
+GRASIM,con,C09,EPS declining for 3 consecutive years,85
+GRASIM,con,C10,ROCE <10%,76
+GRASIM,con,C11,Net Debt >3x EBITDA,76
+GRASIM,pro,P06,PAT CAGR >20% over 5 years,77
+GRASIM,pro,P09,EPS CAGR >15% over 5 years,80
+GRASIM,pro,P10,ROE improving for 3 consecutive years,85
+GRASIM,pro,P12,Assets growing while borrowings are declining,85
+HAL,con,C08,D/E rising for 3 consecutive years,85
+HAL,con,C09,EPS declining for 3 consecutive years,85
+HAL,pro,P01,ROE >20% sustained for 3+ years,95
+HAL,pro,P05,OPM >25% in the latest year,78
+HAL,pro,P06,PAT CAGR >20% over 5 years,81
+HAL,pro,P07,ICR >10 or Debt Free,95
+HAL,pro,P08,Dividend Yield >2% with positive FCF,74
+HAL,pro,P09,EPS CAGR >15% over 5 years,92
+HAL,pro,P10,ROE improving for 3 consecutive years,85
+HAVELLS,con,C03,OPM declining for 3 consecutive years,85
+HAVELLS,con,C05,Revenue is declining year over year,80
+HAVELLS,con,C08,D/E rising for 3 consecutive years,85
+HAVELLS,con,C09,EPS declining for 3 consecutive years,85
+HAVELLS,pro,P01,ROE >20% sustained for 3+ years,70
+HAVELLS,pro,P02,FCF positive for 5+ consecutive years,90
+HAVELLS,pro,P04,Revenue CAGR >15% over 5 years,71
+HAVELLS,pro,P07,ICR >10 or Debt Free,95
+HAVELLS,pro,P08,Dividend Yield >2% with positive FCF,73
+HAVELLS,pro,P10,ROE improving for 3 consecutive years,85
+HAVELLS,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+HAVELLS,pro,P12,Assets growing while borrowings are declining,85
+HCLTECH,con,C03,OPM declining for 3 consecutive years,85
+HCLTECH,con,C05,Revenue is declining year over year,80
+HCLTECH,con,C08,D/E rising for 3 consecutive years,85
+HCLTECH,con,C11,Net Debt >3x EBITDA,76
+HCLTECH,pro,P01,ROE >20% sustained for 3+ years,74
+HCLTECH,pro,P02,FCF positive for 5+ consecutive years,90
+HCLTECH,pro,P07,ICR >10 or Debt Free,95
+HCLTECH,pro,P10,ROE improving for 3 consecutive years,85
+HCLTECH,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+HCLTECH,pro,P12,Assets growing while borrowings are declining,85
+HDFCBANK,con,C06,ICR <1.5,76
+HDFCBANK,con,C08,D/E rising for 3 consecutive years,85
+HDFCBANK,con,C10,ROCE <10%,80
+HDFCBANK,con,C11,Net Debt >3x EBITDA,79
+HDFCBANK,pro,P04,Revenue CAGR >15% over 5 years,86
+HDFCBANK,pro,P05,OPM >25% in the latest year,95
+HDFCBANK,pro,P06,PAT CAGR >20% over 5 years,78
+HDFCBANK,pro,P08,Dividend Yield >2% with positive FCF,85
+HDFCBANK,pro,P09,EPS CAGR >15% over 5 years,73
+HDFCBANK,pro,P10,ROE improving for 3 consecutive years,85
+HDFCLIFE,con,C05,Revenue is declining year over year,80
+HDFCLIFE,con,C10,ROCE <10%,82
+HDFCLIFE,pro,P01,ROE >20% sustained for 3+ years,70
+HDFCLIFE,pro,P04,Revenue CAGR >15% over 5 years,79
+HDFCLIFE,pro,P05,OPM >25% in the latest year,95
+HDFCLIFE,pro,P07,ICR >10 or Debt Free,95
+HDFCLIFE,pro,P10,ROE improving for 3 consecutive years,85
+HDFCLIFE,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+HEROMOTOCO,con,C03,OPM declining for 3 consecutive years,85
+HEROMOTOCO,con,C05,Revenue is declining year over year,80
+HEROMOTOCO,con,C08,D/E rising for 3 consecutive years,85
+HEROMOTOCO,con,C09,EPS declining for 3 consecutive years,85
+HEROMOTOCO,con,C12,Revenue CAGR <5% over 5 years,80
+HEROMOTOCO,pro,P01,ROE >20% sustained for 3+ years,71
+HEROMOTOCO,pro,P02,FCF positive for 5+ consecutive years,90
+HEROMOTOCO,pro,P05,OPM >25% in the latest year,95
+HEROMOTOCO,pro,P07,ICR >10 or Debt Free,95
+HEROMOTOCO,pro,P10,ROE improving for 3 consecutive years,85
+HEROMOTOCO,pro,P12,Assets growing while borrowings are declining,85
+HINDALCO,con,C03,OPM declining for 3 consecutive years,85
+HINDALCO,con,C05,Revenue is declining year over year,80
+HINDALCO,con,C09,EPS declining for 3 consecutive years,85
+HINDALCO,pro,P02,FCF positive for 5+ consecutive years,90
+HINDALCO,pro,P05,OPM >25% in the latest year,95
+HINDALCO,pro,P07,ICR >10 or Debt Free,95
+HINDALCO,pro,P09,EPS CAGR >15% over 5 years,75
+HINDALCO,pro,P10,ROE improving for 3 consecutive years,85
+HINDALCO,pro,P12,Assets growing while borrowings are declining,85
+HINDUNILVR,con,C03,OPM declining for 3 consecutive years,85
+HINDUNILVR,con,C08,D/E rising for 3 consecutive years,85
+HINDUNILVR,pro,P01,ROE >20% sustained for 3+ years,71
+HINDUNILVR,pro,P02,FCF positive for 5+ consecutive years,90
+HINDUNILVR,pro,P05,OPM >25% in the latest year,95
+HINDUNILVR,pro,P07,ICR >10 or Debt Free,95
+HINDUNILVR,pro,P08,Dividend Yield >2% with positive FCF,83
+HINDUNILVR,pro,P10,ROE improving for 3 consecutive years,85
+HINDUNILVR,pro,P12,Assets growing while borrowings are declining,85
+ICICIBANK,con,C02,FCF negative for 3 consecutive years,90
+ICICIBANK,con,C03,OPM declining for 3 consecutive years,85
+ICICIBANK,con,C06,ICR <1.5,78
+ICICIBANK,con,C08,D/E rising for 3 consecutive years,85
+ICICIBANK,con,C09,EPS declining for 3 consecutive years,85
+ICICIBANK,con,C10,ROCE <10%,80
+ICICIBANK,con,C11,Net Debt >3x EBITDA,93
+ICICIBANK,pro,P04,Revenue CAGR >15% over 5 years,78
+ICICIBANK,pro,P05,OPM >25% in the latest year,95
+ICICIBANK,pro,P06,PAT CAGR >20% over 5 years,95
+ICICIBANK,pro,P08,Dividend Yield >2% with positive FCF,78
+ICICIBANK,pro,P09,EPS CAGR >15% over 5 years,95
+ICICIBANK,pro,P10,ROE improving for 3 consecutive years,85
+ICICIGI,con,C03,OPM declining for 3 consecutive years,85
+ICICIGI,con,C05,Revenue is declining year over year,80
+ICICIGI,con,C06,ICR <1.5,95
+ICICIGI,pro,P02,FCF positive for 5+ consecutive years,90
+ICICIGI,pro,P03,D/E = 0 in the latest year,95
+ICICIGI,pro,P04,Revenue CAGR >15% over 5 years,71
+ICICIGI,pro,P05,OPM >25% in the latest year,95
+ICICIGI,pro,P07,ICR >10 or Debt Free,95
+ICICIGI,pro,P08,Dividend Yield >2% with positive FCF,77
+ICICIGI,pro,P09,EPS CAGR >15% over 5 years,73
+ICICIGI,pro,P10,ROE improving for 3 consecutive years,85
+ICICIGI,pro,P12,Assets growing while borrowings are declining,85
+ICICIPRULI,con,C05,Revenue is declining year over year,80
+ICICIPRULI,con,C09,EPS declining for 3 consecutive years,85
+ICICIPRULI,con,C10,ROCE <10%,78
+ICICIPRULI,con,C11,Net Debt >3x EBITDA,83
+ICICIPRULI,pro,P01,ROE >20% sustained for 3+ years,70
+ICICIPRULI,pro,P03,D/E = 0 in the latest year,95
+ICICIPRULI,pro,P05,OPM >25% in the latest year,95
+ICICIPRULI,pro,P07,ICR >10 or Debt Free,95
+ICICIPRULI,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+ICICIPRULI,pro,P12,Assets growing while borrowings are declining,85
+INDIGO,con,C03,OPM declining for 3 consecutive years,85
+INDIGO,con,C05,Revenue is declining year over year,80
+INDIGO,con,C08,D/E rising for 3 consecutive years,85
+INDIGO,con,C09,EPS declining for 3 consecutive years,85
+INDIGO,pro,P01,ROE >20% sustained for 3+ years,95
+INDIGO,pro,P02,FCF positive for 5+ consecutive years,90
+INDIGO,pro,P04,Revenue CAGR >15% over 5 years,80
+INDIGO,pro,P05,OPM >25% in the latest year,95
+INDIGO,pro,P06,PAT CAGR >20% over 5 years,95
+INDIGO,pro,P07,ICR >10 or Debt Free,85
+INDIGO,pro,P08,Dividend Yield >2% with positive FCF,82
+INDIGO,pro,P09,EPS CAGR >15% over 5 years,95
+INDIGO,pro,P10,ROE improving for 3 consecutive years,85
+INDIGO,pro,P12,Assets growing while borrowings are declining,85
+INDUSINDBK,con,C02,FCF negative for 3 consecutive years,90
+INDUSINDBK,con,C03,OPM declining for 3 consecutive years,85
+INDUSINDBK,con,C08,D/E rising for 3 consecutive years,85
+INDUSINDBK,con,C10,ROCE <10%,79
+INDUSINDBK,pro,P04,Revenue CAGR >15% over 5 years,73
+INDUSINDBK,pro,P05,OPM >25% in the latest year,89
+INDUSINDBK,pro,P10,ROE improving for 3 consecutive years,85
+INFY,con,C03,OPM declining for 3 consecutive years,85
+INFY,con,C08,D/E rising for 3 consecutive years,85
+INFY,con,C11,Net Debt >3x EBITDA,95
+INFY,pro,P01,ROE >20% sustained for 3+ years,78
+INFY,pro,P02,FCF positive for 5+ consecutive years,90
+INFY,pro,P07,ICR >10 or Debt Free,95
+INFY,pro,P08,Dividend Yield >2% with positive FCF,83
+INFY,pro,P10,ROE improving for 3 consecutive years,85
+INFY,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+IOC,con,C03,OPM declining for 3 consecutive years,85
+IOC,con,C05,Revenue is declining year over year,80
+IOC,con,C08,D/E rising for 3 consecutive years,85
+IOC,con,C09,EPS declining for 3 consecutive years,85
+IOC,con,C11,Net Debt >3x EBITDA,95
+IOC,pro,P02,FCF positive for 5+ consecutive years,90
+IOC,pro,P10,ROE improving for 3 consecutive years,85
+IOC,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+IOC,pro,P12,Assets growing while borrowings are declining,85
+IRCTC,con,C03,OPM declining for 3 consecutive years,85
+IRCTC,con,C05,Revenue is declining year over year,80
+IRCTC,con,C08,D/E rising for 3 consecutive years,85
+IRCTC,con,C11,Net Debt >3x EBITDA,84
+IRCTC,pro,P01,ROE >20% sustained for 3+ years,81
+IRCTC,pro,P02,FCF positive for 5+ consecutive years,90
+IRCTC,pro,P04,Revenue CAGR >15% over 5 years,76
+IRCTC,pro,P05,OPM >25% in the latest year,81
+IRCTC,pro,P06,PAT CAGR >20% over 5 years,83
+IRCTC,pro,P07,ICR >10 or Debt Free,95
+IRCTC,pro,P09,EPS CAGR >15% over 5 years,93
+IRCTC,pro,P10,ROE improving for 3 consecutive years,85
+IRCTC,pro,P12,Assets growing while borrowings are declining,85
+IRFC,con,C02,FCF negative for 3 consecutive years,90
+IRFC,con,C03,OPM declining for 3 consecutive years,85
+IRFC,con,C06,ICR <1.5,77
+IRFC,con,C08,D/E rising for 3 consecutive years,85
+IRFC,con,C09,EPS declining for 3 consecutive years,85
+IRFC,con,C10,ROCE <10%,84
+IRFC,pro,P04,Revenue CAGR >15% over 5 years,76
+IRFC,pro,P05,OPM >25% in the latest year,95
+IRFC,pro,P06,PAT CAGR >20% over 5 years,74
+IRFC,pro,P08,Dividend Yield >2% with positive FCF,75
+IRFC,pro,P09,EPS CAGR >15% over 5 years,78
+IRFC,pro,P10,ROE improving for 3 consecutive years,85
+IRFC,pro,P12,Assets growing while borrowings are declining,85
+ITC,con,C03,OPM declining for 3 consecutive years,85
+ITC,con,C05,Revenue is declining year over year,80
+ITC,con,C08,D/E rising for 3 consecutive years,85
+ITC,pro,P01,ROE >20% sustained for 3+ years,76
+ITC,pro,P02,FCF positive for 5+ consecutive years,90
+ITC,pro,P05,OPM >25% in the latest year,83
+ITC,pro,P07,ICR >10 or Debt Free,95
+ITC,pro,P08,Dividend Yield >2% with positive FCF,83
+ITC,pro,P10,ROE improving for 3 consecutive years,85
+ITC,pro,P12,Assets growing while borrowings are declining,85
+JINDALSTEL,con,C02,FCF negative for 3 consecutive years,90
+JINDALSTEL,con,C03,OPM declining for 3 consecutive years,85
+JINDALSTEL,con,C05,Revenue is declining year over year,80
+JINDALSTEL,con,C08,D/E rising for 3 consecutive years,85
+JINDALSTEL,con,C09,EPS declining for 3 consecutive years,85
+JINDALSTEL,con,C11,Net Debt >3x EBITDA,77
+JINDALSTEL,con,C12,Revenue CAGR <5% over 5 years,86
+JINDALSTEL,pro,P02,FCF positive for 5+ consecutive years,90
+JINDALSTEL,pro,P10,ROE improving for 3 consecutive years,85
+JINDALSTEL,pro,P12,Assets growing while borrowings are declining,85
+JIOFIN,con,C10,ROCE <10%,91
+JIOFIN,con,C11,Net Debt >3x EBITDA,90
+JIOFIN,con,C13,"Interest coverage ratio is unavailable for this financial company, limiting direct interest-servicing analysis",75
+JIOFIN,pro,P03,D/E = 0 in the latest year,95
+JIOFIN,pro,P05,OPM >25% in the latest year,95
+JIOFIN,pro,P07,ICR >10 or Debt Free,95
+JIOFIN,pro,P08,Dividend Yield >2% with positive FCF,76
+JIOFIN,pro,P12,Assets growing while borrowings are declining,85
+JSWENERGY,con,C03,OPM declining for 3 consecutive years,85
+JSWENERGY,con,C05,Revenue is declining year over year,80
+JSWENERGY,con,C09,EPS declining for 3 consecutive years,85
+JSWENERGY,con,C10,ROCE <10%,78
+JSWENERGY,con,C11,Net Debt >3x EBITDA,80
+JSWENERGY,con,C12,Revenue CAGR <5% over 5 years,76
+JSWENERGY,pro,P02,FCF positive for 5+ consecutive years,90
+JSWENERGY,pro,P05,OPM >25% in the latest year,95
+JSWENERGY,pro,P06,PAT CAGR >20% over 5 years,75
+JSWENERGY,pro,P09,EPS CAGR >15% over 5 years,81
+JSWENERGY,pro,P10,ROE improving for 3 consecutive years,85
+JSWENERGY,pro,P12,Assets growing while borrowings are declining,85
+JSWSTEEL,con,C03,OPM declining for 3 consecutive years,85
+JSWSTEEL,con,C05,Revenue is declining year over year,80
+JSWSTEEL,con,C08,D/E rising for 3 consecutive years,85
+JSWSTEEL,con,C09,EPS declining for 3 consecutive years,85
+JSWSTEEL,con,C11,Net Debt >3x EBITDA,92
+JSWSTEEL,pro,P02,FCF positive for 5+ consecutive years,90
+JSWSTEEL,pro,P10,ROE improving for 3 consecutive years,85
+JSWSTEEL,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+JSWSTEEL,pro,P12,Assets growing while borrowings are declining,85
+KOTAKBANK,con,C02,FCF negative for 3 consecutive years,90
+KOTAKBANK,con,C03,OPM declining for 3 consecutive years,85
+KOTAKBANK,con,C05,Revenue is declining year over year,80
+KOTAKBANK,con,C06,ICR <1.5,78
+KOTAKBANK,con,C08,D/E rising for 3 consecutive years,85
+KOTAKBANK,con,C10,ROCE <10%,79
+KOTAKBANK,con,C11,Net Debt >3x EBITDA,77
+KOTAKBANK,pro,P04,Revenue CAGR >15% over 5 years,72
+KOTAKBANK,pro,P05,OPM >25% in the latest year,95
+KOTAKBANK,pro,P06,PAT CAGR >20% over 5 years,77
+KOTAKBANK,pro,P09,EPS CAGR >15% over 5 years,84
+KOTAKBANK,pro,P10,ROE improving for 3 consecutive years,85
+LICI,con,C13,"Interest coverage ratio is unavailable for this financial company, limiting direct interest-servicing analysis",75
+LICI,pro,P01,ROE >20% sustained for 3+ years,88
+LICI,pro,P02,FCF positive for 5+ consecutive years,90
+LICI,pro,P06,PAT CAGR >20% over 5 years,95
+LICI,pro,P08,Dividend Yield >2% with positive FCF,79
+LICI,pro,P12,Assets growing while borrowings are declining,85
+LODHA,con,C03,OPM declining for 3 consecutive years,85
+LODHA,con,C05,Revenue is declining year over year,80
+LODHA,con,C08,D/E rising for 3 consecutive years,85
+LODHA,con,C09,EPS declining for 3 consecutive years,85
+LODHA,con,C12,Revenue CAGR <5% over 5 years,82
+LODHA,pro,P05,OPM >25% in the latest year,74
+LODHA,pro,P10,ROE improving for 3 consecutive years,85
+LODHA,pro,P12,Assets growing while borrowings are declining,85
+LT,con,C02,FCF negative for 3 consecutive years,90
+LT,con,C03,OPM declining for 3 consecutive years,85
+LT,con,C05,Revenue is declining year over year,80
+LT,con,C08,D/E rising for 3 consecutive years,85
+LT,con,C09,EPS declining for 3 consecutive years,85
+LT,pro,P01,ROE >20% sustained for 3+ years,95
+LT,pro,P10,ROE improving for 3 consecutive years,85
+LT,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+LT,pro,P12,Assets growing while borrowings are declining,85
+LTIM,con,C03,OPM declining for 3 consecutive years,85
+LTIM,con,C08,D/E rising for 3 consecutive years,85
+LTIM,con,C09,EPS declining for 3 consecutive years,85
+LTIM,con,C11,Net Debt >3x EBITDA,77
+LTIM,pro,P01,ROE >20% sustained for 3+ years,71
+LTIM,pro,P02,FCF positive for 5+ consecutive years,90
+LTIM,pro,P04,Revenue CAGR >15% over 5 years,95
+LTIM,pro,P06,PAT CAGR >20% over 5 years,76
+LTIM,pro,P07,ICR >10 or Debt Free,95
+LTIM,pro,P08,Dividend Yield >2% with positive FCF,82
+LTIM,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+LTIM,pro,P12,Assets growing while borrowings are declining,85
+M&M,con,C02,FCF negative for 3 consecutive years,90
+M&M,con,C05,Revenue is declining year over year,80
+M&M,con,C08,D/E rising for 3 consecutive years,85
+M&M,con,C09,EPS declining for 3 consecutive years,85
+M&M,pro,P09,EPS CAGR >15% over 5 years,73
+M&M,pro,P10,ROE improving for 3 consecutive years,85
+M&M,pro,P12,Assets growing while borrowings are declining,85
+MARUTI,con,C03,OPM declining for 3 consecutive years,85
+MARUTI,con,C05,Revenue is declining year over year,80
+MARUTI,con,C08,D/E rising for 3 consecutive years,85
+MARUTI,con,C09,EPS declining for 3 consecutive years,85
+MARUTI,con,C11,Net Debt >3x EBITDA,91
+MARUTI,pro,P02,FCF positive for 5+ consecutive years,90
+MARUTI,pro,P07,ICR >10 or Debt Free,95
+MARUTI,pro,P10,ROE improving for 3 consecutive years,85
+MARUTI,pro,P12,Assets growing while borrowings are declining,85
+MOTHERSON,con,C03,OPM declining for 3 consecutive years,85
+MOTHERSON,con,C05,Revenue is declining year over year,80
+MOTHERSON,con,C08,D/E rising for 3 consecutive years,85
+MOTHERSON,con,C11,Net Debt >3x EBITDA,76
+MOTHERSON,pro,P01,ROE >20% sustained for 3+ years,70
+MOTHERSON,pro,P02,FCF positive for 5+ consecutive years,90
+MOTHERSON,pro,P08,Dividend Yield >2% with positive FCF,71
+MOTHERSON,pro,P10,ROE improving for 3 consecutive years,85
+MOTHERSON,pro,P12,Assets growing while borrowings are declining,85
+NAUKRI,con,C03,OPM declining for 3 consecutive years,85
+NAUKRI,con,C05,Revenue is declining year over year,80
+NAUKRI,con,C10,ROCE <10%,88
+NAUKRI,pro,P02,FCF positive for 5+ consecutive years,90
+NAUKRI,pro,P04,Revenue CAGR >15% over 5 years,75
+NAUKRI,pro,P05,OPM >25% in the latest year,74
+NAUKRI,pro,P07,ICR >10 or Debt Free,95
+NAUKRI,pro,P10,ROE improving for 3 consecutive years,85
+NAUKRI,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+NAUKRI,pro,P12,Assets growing while borrowings are declining,85
+NESTLEIND,con,C03,OPM declining for 3 consecutive years,85
+NESTLEIND,con,C05,Revenue is declining year over year,80
+NESTLEIND,con,C08,D/E rising for 3 consecutive years,85
+NESTLEIND,pro,P01,ROE >20% sustained for 3+ years,95
+NESTLEIND,pro,P02,FCF positive for 5+ consecutive years,90
+NESTLEIND,pro,P07,ICR >10 or Debt Free,95
+NESTLEIND,pro,P08,Dividend Yield >2% with positive FCF,80
+NESTLEIND,pro,P10,ROE improving for 3 consecutive years,85
+NESTLEIND,pro,P12,Assets growing while borrowings are declining,85
+NHPC,con,C03,OPM declining for 3 consecutive years,85
+NHPC,con,C05,Revenue is declining year over year,80
+NHPC,con,C08,D/E rising for 3 consecutive years,85
+NHPC,con,C10,ROCE <10%,80
+NHPC,con,C11,Net Debt >3x EBITDA,76
+NHPC,con,C12,Revenue CAGR <5% over 5 years,85
+NHPC,pro,P02,FCF positive for 5+ consecutive years,90
+NHPC,pro,P05,OPM >25% in the latest year,95
+NHPC,pro,P10,ROE improving for 3 consecutive years,85
+NHPC,pro,P12,Assets growing while borrowings are declining,85
+NTPC,con,C02,FCF negative for 3 consecutive years,90
+NTPC,con,C03,OPM declining for 3 consecutive years,85
+NTPC,con,C05,Revenue is declining year over year,80
+NTPC,con,C08,D/E rising for 3 consecutive years,85
+NTPC,con,C09,EPS declining for 3 consecutive years,85
+NTPC,con,C11,Net Debt >3x EBITDA,98
+NTPC,pro,P05,OPM >25% in the latest year,74
+NTPC,pro,P10,ROE improving for 3 consecutive years,85
+NTPC,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+NTPC,pro,P12,Assets growing while borrowings are declining,85
+ONGC,con,C03,OPM declining for 3 consecutive years,85
+ONGC,con,C05,Revenue is declining year over year,80
+ONGC,con,C08,D/E rising for 3 consecutive years,85
+ONGC,con,C09,EPS declining for 3 consecutive years,85
+ONGC,pro,P02,FCF positive for 5+ consecutive years,90
+ONGC,pro,P10,ROE improving for 3 consecutive years,85
+ONGC,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+ONGC,pro,P12,Assets growing while borrowings are declining,85
+PFC,con,C02,FCF negative for 3 consecutive years,90
+PFC,con,C03,OPM declining for 3 consecutive years,85
+PFC,con,C05,Revenue is declining year over year,80
+PFC,con,C06,ICR <1.5,84
+PFC,con,C08,D/E rising for 3 consecutive years,85
+PFC,con,C10,ROCE <10%,75
+PFC,pro,P01,ROE >20% sustained for 3+ years,75
+PFC,pro,P05,OPM >25% in the latest year,84
+PFC,pro,P09,EPS CAGR >15% over 5 years,72
+PFC,pro,P10,ROE improving for 3 consecutive years,85
+PIDILITIND,con,C03,OPM declining for 3 consecutive years,85
+PIDILITIND,con,C05,Revenue is declining year over year,80
+PIDILITIND,con,C08,D/E rising for 3 consecutive years,85
+PIDILITIND,pro,P01,ROE >20% sustained for 3+ years,72
+PIDILITIND,pro,P07,ICR >10 or Debt Free,95
+PIDILITIND,pro,P09,EPS CAGR >15% over 5 years,72
+PIDILITIND,pro,P12,Assets growing while borrowings are declining,85
+PNB,con,C02,FCF negative for 3 consecutive years,90
+PNB,con,C05,Revenue is declining year over year,80
+PNB,con,C06,ICR <1.5,88
+PNB,con,C08,D/E rising for 3 consecutive years,85
+PNB,con,C09,EPS declining for 3 consecutive years,85
+PNB,con,C10,ROCE <10%,92
+PNB,con,C11,Net Debt >3x EBITDA,87
+PNB,pro,P01,ROE >20% sustained for 3+ years,95
+PNB,pro,P04,Revenue CAGR >15% over 5 years,74
+PNB,pro,P10,ROE improving for 3 consecutive years,85
+POWERGRID,con,C02,FCF negative for 3 consecutive years,90
+POWERGRID,con,C03,OPM declining for 3 consecutive years,85
+POWERGRID,con,C08,D/E rising for 3 consecutive years,85
+POWERGRID,pro,P02,FCF positive for 5+ consecutive years,90
+POWERGRID,pro,P05,OPM >25% in the latest year,95
+POWERGRID,pro,P08,Dividend Yield >2% with positive FCF,78
+POWERGRID,pro,P10,ROE improving for 3 consecutive years,85
+POWERGRID,pro,P12,Assets growing while borrowings are declining,85
+RECLTD,con,C02,FCF negative for 3 consecutive years,90
+RECLTD,con,C03,OPM declining for 3 consecutive years,85
+RECLTD,con,C05,Revenue is declining year over year,80
+RECLTD,con,C08,D/E rising for 3 consecutive years,85
+RECLTD,pro,P01,ROE >20% sustained for 3+ years,70
+RECLTD,pro,P04,Revenue CAGR >15% over 5 years,70
+RECLTD,pro,P05,OPM >25% in the latest year,95
+RECLTD,pro,P06,PAT CAGR >20% over 5 years,71
+RECLTD,pro,P09,EPS CAGR >15% over 5 years,79
+RECLTD,pro,P10,ROE improving for 3 consecutive years,85
+RECLTD,pro,P12,Assets growing while borrowings are declining,85
+RELIANCE,con,C05,Revenue is declining year over year,80
+RELIANCE,con,C08,D/E rising for 3 consecutive years,85
+RELIANCE,con,C10,ROCE <10%,76
+RELIANCE,con,C11,Net Debt >3x EBITDA,86
+RELIANCE,pro,P08,Dividend Yield >2% with positive FCF,86
+RELIANCE,pro,P10,ROE improving for 3 consecutive years,85
+RELIANCE,pro,P12,Assets growing while borrowings are declining,85
+SBILIFE,con,C03,OPM declining for 3 consecutive years,85
+SBILIFE,con,C05,Revenue is declining year over year,80
+SBILIFE,con,C11,Net Debt >3x EBITDA,90
+SBILIFE,con,C13,"Interest coverage ratio is unavailable for this financial company, limiting direct interest-servicing analysis",75
+SBILIFE,pro,P01,ROE >20% sustained for 3+ years,70
+SBILIFE,pro,P03,D/E = 0 in the latest year,95
+SBILIFE,pro,P04,Revenue CAGR >15% over 5 years,83
+SBILIFE,pro,P07,ICR >10 or Debt Free,95
+SBILIFE,pro,P10,ROE improving for 3 consecutive years,85
+SBILIFE,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+SBIN,con,C03,OPM declining for 3 consecutive years,85
+SBIN,con,C05,Revenue is declining year over year,80
+SBIN,con,C06,ICR <1.5,87
+SBIN,con,C09,EPS declining for 3 consecutive years,85
+SBIN,con,C10,ROCE <10%,83
+SBIN,pro,P02,FCF positive for 5+ consecutive years,90
+SBIN,pro,P03,D/E = 0 in the latest year,95
+SBIN,pro,P06,PAT CAGR >20% over 5 years,95
+SBIN,pro,P07,ICR >10 or Debt Free,95
+SBIN,pro,P09,EPS CAGR >15% over 5 years,95
+SHREECEM,con,C03,OPM declining for 3 consecutive years,85
+SHREECEM,con,C05,Revenue is declining year over year,80
+SHREECEM,con,C08,D/E rising for 3 consecutive years,85
+SHREECEM,con,C09,EPS declining for 3 consecutive years,85
+SHREECEM,pro,P02,FCF positive for 5+ consecutive years,90
+SHREECEM,pro,P07,ICR >10 or Debt Free,87
+SHREECEM,pro,P08,Dividend Yield >2% with positive FCF,76
+SHREECEM,pro,P10,ROE improving for 3 consecutive years,85
+SHREECEM,pro,P12,Assets growing while borrowings are declining,85
+SHRIRAMFIN,con,C02,FCF negative for 3 consecutive years,90
+SHRIRAMFIN,con,C03,OPM declining for 3 consecutive years,85
+SHRIRAMFIN,con,C06,ICR <1.5,82
+SHRIRAMFIN,con,C09,EPS declining for 3 consecutive years,85
+SHRIRAMFIN,con,C11,Net Debt >3x EBITDA,90
+SHRIRAMFIN,pro,P04,Revenue CAGR >15% over 5 years,79
+SHRIRAMFIN,pro,P05,OPM >25% in the latest year,74
+SHRIRAMFIN,pro,P06,PAT CAGR >20% over 5 years,82
+SHRIRAMFIN,pro,P09,EPS CAGR >15% over 5 years,78
+SHRIRAMFIN,pro,P10,ROE improving for 3 consecutive years,85
+SIEMENS,con,C05,Revenue is declining year over year,80
+SIEMENS,con,C08,D/E rising for 3 consecutive years,85
+SIEMENS,con,C09,EPS declining for 3 consecutive years,85
+SIEMENS,pro,P07,ICR >10 or Debt Free,95
+SIEMENS,pro,P08,Dividend Yield >2% with positive FCF,79
+SIEMENS,pro,P09,EPS CAGR >15% over 5 years,77
+SIEMENS,pro,P10,ROE improving for 3 consecutive years,85
+SIEMENS,pro,P12,Assets growing while borrowings are declining,85
+SUNPHARMA,con,C03,OPM declining for 3 consecutive years,85
+SUNPHARMA,con,C05,Revenue is declining year over year,80
+SUNPHARMA,con,C08,D/E rising for 3 consecutive years,85
+SUNPHARMA,pro,P01,ROE >20% sustained for 3+ years,70
+SUNPHARMA,pro,P02,FCF positive for 5+ consecutive years,90
+SUNPHARMA,pro,P05,OPM >25% in the latest year,74
+SUNPHARMA,pro,P06,PAT CAGR >20% over 5 years,80
+SUNPHARMA,pro,P07,ICR >10 or Debt Free,95
+SUNPHARMA,pro,P08,Dividend Yield >2% with positive FCF,81
+SUNPHARMA,pro,P09,EPS CAGR >15% over 5 years,95
+SUNPHARMA,pro,P10,ROE improving for 3 consecutive years,85
+SUNPHARMA,pro,P12,Assets growing while borrowings are declining,85
+TATACONSUM,con,C05,Revenue is declining year over year,80
+TATACONSUM,con,C08,D/E rising for 3 consecutive years,85
+TATACONSUM,con,C09,EPS declining for 3 consecutive years,85
+TATACONSUM,pro,P02,FCF positive for 5+ consecutive years,90
+TATACONSUM,pro,P04,Revenue CAGR >15% over 5 years,74
+TATACONSUM,pro,P06,PAT CAGR >20% over 5 years,71
+TATACONSUM,pro,P10,ROE improving for 3 consecutive years,85
+TATACONSUM,pro,P12,Assets growing while borrowings are declining,85
+TATAMOTORS,con,C02,FCF negative for 3 consecutive years,90
+TATAMOTORS,con,C03,OPM declining for 3 consecutive years,85
+TATAMOTORS,con,C05,Revenue is declining year over year,80
+TATAMOTORS,con,C08,D/E rising for 3 consecutive years,85
+TATAMOTORS,con,C09,EPS declining for 3 consecutive years,85
+TATAMOTORS,pro,P01,ROE >20% sustained for 3+ years,81
+TATAMOTORS,pro,P08,Dividend Yield >2% with positive FCF,83
+TATAMOTORS,pro,P10,ROE improving for 3 consecutive years,85
+TATAMOTORS,pro,P12,Assets growing while borrowings are declining,85
+TATAPOWER,con,C03,OPM declining for 3 consecutive years,85
+TATAPOWER,con,C05,Revenue is declining year over year,80
+TATAPOWER,con,C08,D/E rising for 3 consecutive years,85
+TATAPOWER,pro,P02,FCF positive for 5+ consecutive years,90
+TATAPOWER,pro,P04,Revenue CAGR >15% over 5 years,72
+TATAPOWER,pro,P10,ROE improving for 3 consecutive years,85
+TATAPOWER,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+TATAPOWER,pro,P12,Assets growing while borrowings are declining,85
+TATASTEEL,con,C03,OPM declining for 3 consecutive years,85
+TATASTEEL,con,C05,Revenue is declining year over year,80
+TATASTEEL,con,C08,D/E rising for 3 consecutive years,85
+TATASTEEL,con,C09,EPS declining for 3 consecutive years,85
+TATASTEEL,con,C10,ROCE <10%,81
+TATASTEEL,con,C11,Net Debt >3x EBITDA,76
+TATASTEEL,pro,P02,FCF positive for 5+ consecutive years,90
+TATASTEEL,pro,P10,ROE improving for 3 consecutive years,85
+TATASTEEL,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+TATASTEEL,pro,P12,Assets growing while borrowings are declining,85
+TCS,con,C03,OPM declining for 3 consecutive years,85
+TCS,con,C11,Net Debt >3x EBITDA,82
+TCS,pro,P01,ROE >20% sustained for 3+ years,93
+TCS,pro,P02,FCF positive for 5+ consecutive years,90
+TCS,pro,P05,OPM >25% in the latest year,72
+TCS,pro,P07,ICR >10 or Debt Free,95
+TCS,pro,P10,ROE improving for 3 consecutive years,85
+TCS,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+TCS,pro,P12,Assets growing while borrowings are declining,85
+TECHM,con,C03,OPM declining for 3 consecutive years,85
+TECHM,con,C05,Revenue is declining year over year,80
+TECHM,con,C08,D/E rising for 3 consecutive years,85
+TECHM,con,C09,EPS declining for 3 consecutive years,85
+TECHM,pro,P01,ROE >20% sustained for 3+ years,70
+TECHM,pro,P02,FCF positive for 5+ consecutive years,90
+TECHM,pro,P07,ICR >10 or Debt Free,92
+TECHM,pro,P10,ROE improving for 3 consecutive years,85
+TECHM,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+TECHM,pro,P12,Assets growing while borrowings are declining,85
+TITAN,con,C01,D/E >2 for a non-financial company,71
+TITAN,con,C05,Revenue is declining year over year,80
+TITAN,con,C08,D/E rising for 3 consecutive years,85
+TITAN,con,C11,Net Debt >3x EBITDA,76
+TITAN,pro,P01,ROE >20% sustained for 3+ years,81
+TITAN,pro,P02,FCF positive for 5+ consecutive years,90
+TITAN,pro,P04,Revenue CAGR >15% over 5 years,81
+TITAN,pro,P08,Dividend Yield >2% with positive FCF,76
+TITAN,pro,P09,EPS CAGR >15% over 5 years,75
+TITAN,pro,P10,ROE improving for 3 consecutive years,85
+TITAN,pro,P11,"Revenue CAGR exceeds PAT CAGR, indicating operating leverage",80
+TITAN,pro,P12,Assets growing while borrowings are declining,85
+TORNTPHARM,con,C03,OPM declining for 3 consecutive years,85
+TORNTPHARM,con,C05,Revenue is declining year over year,80
+TORNTPHARM,con,C08,D/E rising for 3 consecutive years,85
+TORNTPHARM,con,C09,EPS declining for 3 consecutive years,85
+TORNTPHARM,con,C11,Net Debt >3x EBITDA,85
+TORNTPHARM,pro,P01,ROE >20% sustained for 3+ years,74
+TORNTPHARM,pro,P02,FCF positive for 5+ consecutive years,90
+TORNTPHARM,pro,P05,OPM >25% in the latest year,79
+TORNTPHARM,pro,P06,PAT CAGR >20% over 5 years,86
+TORNTPHARM,pro,P07,ICR >10 or Debt Free,75
+TORNTPHARM,pro,P09,EPS CAGR >15% over 5 years,95
+TORNTPHARM,pro,P10,ROE improving for 3 consecutive years,85
+TORNTPHARM,pro,P12,Assets growing while borrowings are declining,85
+TRENT,con,C02,FCF negative for 3 consecutive years,90
+TRENT,con,C05,Revenue is declining year over year,80
+TRENT,con,C08,D/E rising for 3 consecutive years,85
+TRENT,pro,P04,Revenue CAGR >15% over 5 years,95
+TRENT,pro,P06,PAT CAGR >20% over 5 years,95
+TRENT,pro,P07,ICR >10 or Debt Free,80
+TRENT,pro,P08,Dividend Yield >2% with positive FCF,77
+TRENT,pro,P09,EPS CAGR >15% over 5 years,95
+TRENT,pro,P10,ROE improving for 3 consecutive years,85
+TRENT,pro,P12,Assets growing while borrowings are declining,85
+TVSMOTOR,con,C02,FCF negative for 3 consecutive years,90
+TVSMOTOR,con,C03,OPM declining for 3 consecutive years,85
+TVSMOTOR,con,C05,Revenue is declining year over year,80
+TVSMOTOR,con,C08,D/E rising for 3 consecutive years,85
+TVSMOTOR,pro,P01,ROE >20% sustained for 3+ years,76
+TVSMOTOR,pro,P04,Revenue CAGR >15% over 5 years,72
+TVSMOTOR,pro,P06,PAT CAGR >20% over 5 years,74
+TVSMOTOR,pro,P09,EPS CAGR >15% over 5 years,82
+TVSMOTOR,pro,P10,ROE improving for 3 consecutive years,85
+TVSMOTOR,pro,P12,Assets growing while borrowings are declining,85
