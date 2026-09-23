@@ -1,90 +1,97 @@
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import JSONResponse
-import math
+import logging
+import sqlite3
+import time
+from pathlib import Path
 
-from src.screener.engine import ScreenerEngine
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(
-    title="Nifty 100 Analytics API",
-    description="FastAPI service for Nifty 100 financial analytics",
-    version="1.0.0"
+from src.api.routers import (
+    companies,
+    documents,
+    health,
+    peers,
+    portfolio,
+    screener,
+    sectors,
+    valuation,
 )
 
-engine = ScreenerEngine()
+ROOT = Path(__file__).resolve().parents[2]
+DB_PATH = ROOT / "nifty100.db"
+VERSION = "1.0.0"
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("nifty100_api")
+
+app = FastAPI(
+    title="Nifty100 Analytics API",
+    description="REST API for Nifty100 financial analytics and screening.",
+    version=VERSION,
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
-def clean_value(value):
-    if value is None:
-        return None
+@app.middleware("http")
+async def request_logging_middleware(request, call_next):
+    """Log incoming API requests and their response status."""
+    start_time = time.perf_counter()
 
-    if isinstance(value, float):
-        if math.isnan(value) or math.isinf(value):
-            return None
+    response = await call_next(request)
 
-    return value
+    elapsed = time.perf_counter() - start_time
+
+    logger.info(
+        "%s %s -> %s (%.4fs)",
+        request.method,
+        request.url.path,
+        response.status_code,
+        elapsed,
+    )
+
+    response.headers["X-Response-Time"] = f"{elapsed:.4f}"
+
+    return response
 
 
-def clean_records(records):
-    cleaned = []
+def get_db_connection():
+    """Open a SQLite connection to the Nifty100 analytics database."""
+    connection = sqlite3.connect(DB_PATH)
+    connection.row_factory = sqlite3.Row
+    connection.execute("PRAGMA foreign_keys = ON")
+    return connection
 
-    for record in records:
-        cleaned_record = {}
 
-        for key, value in record.items():
-            cleaned_record[key] = clean_value(value)
+app.state.db_path = DB_PATH
+app.state.root_path = ROOT
+app.state.start_time = time.time()
+app.state.version = VERSION
+app.state.get_db_connection = get_db_connection
 
-        cleaned.append(cleaned_record)
 
-    return cleaned
+app.include_router(health.router, prefix="/api/v1")
+app.include_router(companies.router, prefix="/api/v1")
+app.include_router(screener.router, prefix="/api/v1")
+app.include_router(sectors.router, prefix="/api/v1")
+app.include_router(peers.router, prefix="/api/v1")
+app.include_router(valuation.router, prefix="/api/v1")
+app.include_router(portfolio.router, prefix="/api/v1")
+app.include_router(documents.router, prefix="/api/v1")
 
 
 @app.get("/")
 def root():
+    """Return API metadata and documentation links."""
     return {
-        "message": "Nifty 100 Analytics API is running"
+        "name": "Nifty100 Analytics API",
+        "version": VERSION,
+        "docs": "/docs",
+        "health": "/api/v1/health",
     }
-
-
-@app.get("/health")
-def health():
-    return {
-        "status": "healthy",
-        "rows": len(engine.df),
-        "companies": int(engine.df["company_id"].nunique())
-    }
-
-
-@app.get("/screener/presets")
-def get_presets():
-    return {
-        "presets": list(engine.config["presets"].keys())
-    }
-
-
-@app.get("/screener/{preset_name}")
-def run_screener(preset_name: str):
-    if preset_name not in engine.config["presets"]:
-        raise HTTPException(
-            status_code=404,
-            detail=f"Unknown preset: {preset_name}"
-        )
-
-    try:
-        result = engine.run_preset(preset_name)
-
-        records = result.to_dict(orient="records")
-
-        return JSONResponse(
-            content={
-                "preset": preset_name,
-                "rows": len(result),
-                "companies": int(result["company_id"].nunique()),
-                "results": clean_records(records)
-            }
-        )
-
-    except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=str(e)
-        )

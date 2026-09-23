@@ -1,0 +1,4 @@
+company_id,broad_sector,field,value,z_score,abs_z_score,threshold,issue,severity
+INDIGO,Consumer Discretionary,return_on_equity_pct,637.3557187827912,3.6008897195770326,3.6008897195770326,3.0,Sector-level outlier,HIGH
+ADANIGREEN,Energy,debt_to_equity,6.375756429652042,3.4096883684621377,3.4096883684621377,3.0,Sector-level outlier,HIGH
+PNB,Financials,return_on_equity_pct,97.33476193665037,4.183638194245693,4.183638194245693,3.0,Sector-level outlier,HIGH

@@ -1,0 +1,127 @@
+{
+  "info": {
+    "name": "Nifty100 Analytics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "/api/v1/health",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/health"
+      }
+    },
+    {
+      "name": "/api/v1/companies",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/companies"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/companies/{ticker}"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/pl",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/companies/{ticker}/pl"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/bs",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/companies/{ticker}/bs"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/cashflow",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/companies/{ticker}/cashflow"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/ratios",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/companies/{ticker}/ratios"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/tearsheet",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/companies/{ticker}/tearsheet"
+      }
+    },
+    {
+      "name": "/api/v1/screener",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/screener"
+      }
+    },
+    {
+      "name": "/api/v1/sectors",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/sectors"
+      }
+    },
+    {
+      "name": "/api/v1/sectors/{sector}/companies",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/sectors/{sector}/companies"
+      }
+    },
+    {
+      "name": "/api/v1/peers/{group_name}",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/peers/{group_name}"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/peers/compare",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/companies/{ticker}/peers/compare"
+      }
+    },
+    {
+      "name": "/api/v1/market-cap/{ticker}",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/market-cap/{ticker}"
+      }
+    },
+    {
+      "name": "/api/v1/portfolio/stats",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/portfolio/stats"
+      }
+    },
+    {
+      "name": "/api/v1/companies/{ticker}/documents",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/api/v1/companies/{ticker}/documents"
+      }
+    },
+    {
+      "name": "/",
+      "request": {
+        "method": "get",
+        "url": "http://127.0.0.1:8000/"
+      }
+    }
+  ]
+}
