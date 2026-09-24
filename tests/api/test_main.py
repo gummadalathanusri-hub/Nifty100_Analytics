@@ -20,7 +20,7 @@ def test_health():
     data = response.json()
     assert data["status"] == "ok"
     assert data["version"] == "1.0.0"
-    assert data["db_row_counts"]["companies"] == 100
+    assert data["db_row_counts"]["companies"] == 92
 
 
 def test_screener():

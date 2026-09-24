@@ -4,7 +4,7 @@ load:
 	python -m src.etl.loader
 
 ratios:
-	python -m src.analytics.ratios
+	python -m src.analytics.populate_ratios
 
 test:
 	pytest -v

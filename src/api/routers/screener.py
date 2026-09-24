@@ -5,6 +5,9 @@ from pathlib import Path
 import pandas as pd
 from fastapi import APIRouter, HTTPException, Query, Request
 
+from src.screener.engine import ScreenerEngine
+
+
 ROOT = Path(__file__).resolve().parents[3]
 UNIVERSE_PATH = ROOT / "output" / "sprint6_company_universe.csv"
 
@@ -18,6 +21,7 @@ router = APIRouter(tags=["Screener"])
 @router.get("/screener")
 def run_screener(
     request: Request,
+    preset: str | None = Query(default=None),
     min_roe: str | None = Query(default=None),
     max_de: str | None = Query(default=None),
     min_fcf: str | None = Query(default=None),
@@ -27,6 +31,25 @@ def run_screener(
     max_pe: str | None = Query(default=None),
 ):
     """Return ranked companies matching the supplied screening filters."""
+
+    if preset:
+        engine = ScreenerEngine()
+
+        try:
+            result = engine.run_preset(preset)
+        except ValueError:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Unknown preset: {preset}",
+            )
+
+        result = result.astype(object).where(pd.notna(result), None)
+
+        return {
+            "count": len(result),
+            "results": result.to_dict(orient="records"),
+        }
+    
     numeric_filters = {
         "min_roe": min_roe,
         "max_de": max_de,
